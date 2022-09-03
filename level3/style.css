@@ -1,0 +1,70 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+:root {
+	scroll-behavior: auto;
+}
+* { box-sizing: border-box; }
+.darkmode { background-color: darkslateblue; color:fff}
+
+.alert-box { background-color: powderblue; 
+padding: 20px; border-radius: 4px;
+display: none;}
+
+.list-group { display: none;}
+.show {display: block;}
+
+.navbar-brand { font-size: 2rem;transition: all 0.2s;}
+.navbar-brand.small { font-size: 1rem; }
+.redbox-wrap {height: 2px;width: 100%;}
+.redbox { background: tomato;height: 2px;width:0%;}
+
+
+ul.list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid #ccc;
+}
+ul.list::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.tab-button {
+	display: block;
+	padding: 10px 20px 10px 20px;
+	float: left;
+	margin-right: -1px;
+	margin-bottom: -1px;
+	color: grey;
+	text-decoration: none;
+	cursor: pointer;
+}
+.orange {
+	border-top: 2px solid orange;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid white;
+	border-left: 1px solid #ccc;
+	color: black;
+	margin-top: -2px;
+}
+.tab-content {
+	display: none;
+	padding: 10px;
+}
+.show {
+	display: block;
+}
+
+.black-bg {  width: 100%; height: 100%; position:fixed; 
+	top:0; left:0;  opacity: 0; transition: all 0.5s;
+	visibility: hidden;
+	background: rgba(0,0,0,0.5); z-index:5; padding: 30px;}
+.white-bg { background-color: white;padding: 20px;}
+.blue-bg { background-color: powderblue;padding: 20px;}
+.show {display: block;}
+.show-modal {display: block;
+ opacity: 1;
+ visibility: visible;
+}
+.form-hide { display: none;}
