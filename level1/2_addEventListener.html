@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	
+	<a href="../index.html" class="btn btn-outline-primary">home</a>
 	<nav class="navbar navbar-light bg-light">
 		<div class="container-fluid">
 			<span class="navbar-brand">Navbar</span>
@@ -29,7 +29,7 @@
 	</ul>
 
 
-<div class="alert-box" id="al">
+<div class="alert-box" id="albox">
 	<p class="atext">아이디입력하셈.</p>	
 	<button type="button" id="al-close" class="btn-close"></button>
 </div>
@@ -47,18 +47,16 @@
 			document.querySelector('.list-group').classList.toggle('show');
 		})
 
-
-
 		document.getElementById('al-close').addEventListener('click', function(){
-			document.getElementById('al').style.display = 'none';
+			document.getElementById('albox').style.display = 'none';
 		} );
 
 		function showhide(i){
-			document.getElementById('al').style.display = i;
+			document.getElementById('albox').style.display = i;
 			document.getElementsByClassName('atext')[0].innerHTML = '아이디입력하셈';
 		}
 		function showhide2(i){
-			document.getElementById('al').style.display = i;
+			document.getElementById('albox').style.display = i;
 			document.getElementsByClassName('atext')[0].innerHTML = '비번입력하셈';
 		}
 

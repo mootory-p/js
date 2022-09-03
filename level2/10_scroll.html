@@ -11,23 +11,14 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
+	<a href="../index.html" class="btn btn-outline-primary">home</a>
+	
 	<nav class="navbar navbar-expand-lg bg-light sticky-top">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="#">Navbar</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-				<div class="navbar-nav">
-					<a class="nav-link active" aria-current="page" href="#">Home</a>
-					<a class="nav-link" href="#">Features</a>
-					<a class="nav-link" href="#">Pricing</a>
-					<a class="nav-link disabled">Disabled</a>
-				</div>
-			</div>
-		</div>
-		<div class="redbox-wrap">
+		<div class="row redbox-wrap">
 			<div class="redbox"></div>
+		</div>
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">Navbar</a>	
 		</div>
 	</nav>
 	
@@ -43,6 +34,8 @@
 	</div>
 	<div style="height:300px;background:tomato"></div>
 	<div style="height:300px;background:powderblue"></div>
+
+
 <script>
 	
 window.addEventListener('scroll', function(){
@@ -58,7 +51,7 @@ window.addEventListener('scroll', function(){
 	}
 
 
-	
+	// 빨간로딩막대
 	var thm = document.querySelector('html').scrollTop; 
 	var thmbox = document.querySelector('html').clientHeight; 
 	var thmsr = document.querySelector('html').scrollHeight; 
@@ -68,7 +61,7 @@ window.addEventListener('scroll', function(){
 })
 
 
-
+// 약관 다 읽었니
 document.querySelector('.lorem').addEventListener('scroll', function(){
 	// th2 window 아닐때 scrollTop
 	// th2box 실제 박스 높이
@@ -82,12 +75,6 @@ document.querySelector('.lorem').addEventListener('scroll', function(){
 	}
 	console.log(th2,th2box, th2sr);
 })
-
-
-
-
-
-
 
 
 //로드 된 뒤에 실행, 1초에 60번 움직이므로 

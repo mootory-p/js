@@ -11,9 +11,10 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
+	<a href="../index.html" class="btn btn-outline-primary">home</a>
 
 <div class="blue-bg">
-		<h4>로그인하세요</h4>
+		<h4>정규표현식</h4>
 			<form action="success.html">
 				<div class="my-3">
 					<input type="text" id="id" class="form-control" placeholder="id">
@@ -23,7 +24,7 @@
 				 </div>
 				 <div class="my-3">
 					 <input type="password" id="pw" placeholder="password" class="form-control">
-						대문자포함해야함
+						비번은 대문자포함해야함
 					</div>
 				 <button type="submit" id="gobtn" class="btn btn-primary">전송</button>
 				 <button type="button" class="btn btn-secondary close id="close">닫기</button>
@@ -55,8 +56,8 @@ $('form').on('submit', function(e){
 
 		//정규표현식 regular expression 
 		/a/.test('abc');
-		/[a-z]/.test('asdf asdf');
-		/[a-zA-Z]/.test('asAdf asdf');
+		/[a-z]/.test('asdf asdf'); //영문소문자있니
+		/[a-zA-Z]/.test('asAdf asdf'); //영문있니
 		/[ㄱ-ㅎ가-힣]/.test('asAdf asdf');
 		/[0-9]/.test('asAdf asdf');
 		/\s/.test('asAdf asdf'); //아무문자 한개 특수기호포함, 복수는 +붙임

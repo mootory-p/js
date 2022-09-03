@@ -15,7 +15,7 @@ display: none;}
 
 .navbar-brand { font-size: 2rem;transition: all 0.2s;}
 .navbar-brand.small { font-size: 1rem; }
-.redbox-wrap {height: 2px;width: 100%;}
+.redbox-wrap {height: 2px;width: 100%; z-index: 1033; position: absolute;top:0;left: 0;right: 0;}
 .redbox { background: tomato;height: 2px;width:0%;}
 
 
@@ -41,7 +41,7 @@ ul.list::after {
 	cursor: pointer;
 }
 .orange {
-	border-top: 2px solid orange;
+	border-top: 2px solid rgb(35, 110, 251);
 	border-right: 1px solid #ccc;
 	border-bottom: 1px solid white;
 	border-left: 1px solid #ccc;
@@ -67,3 +67,8 @@ ul.list::after {
  opacity: 1;
  visibility: visible;
 }
+
+.slide-wrap {width:900px ;display: flex; height: 200px; transition: all 0.2s; transform: translateX(0);}
+.slide-box {width: 300px;height: 200px; overflow: hidden;}
+.slide-box img { width: 100%; height: auto; }
+.over { width: 300px;height: 300px; overflow: hidden;}

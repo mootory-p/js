@@ -13,31 +13,21 @@
 
 </head>
 <body>
-	
+	<a href="../index.html" class="btn btn-outline-primary">home</a>
+
 	<nav class="navbar navbar-light bg-light">
 		<div class="container-fluid">
 			<span class="navbar-brand">Navbar</span>
-			<button class="navbar-toggler" type="button">
-				<span class="navbar-toggler-icon"></span>
-			</button>
 		</div>
 	</nav> 
-	<ul class="list-group">
-		<li class="list-group-item">An item</li>
-		<li class="list-group-item">A second item</li>
-		<li class="list-group-item">A third item</li>
-		<li class="list-group-item">A fourth item</li>
-		<li class="list-group-item">And a fifth one</li>
-	</ul>
 
+	<div class="alert-box" id="al">
+		<p class="atext">아이디입력하셈.</p>	
+		<button type="button" class="btn-close"></button>
+	</div>
 
-<div class="alert-box" id="al">
-	<p class="atext">아이디입력하셈.</p>	
-	<button type="button" id="al-close" class="btn-close"></button>
-</div>
+	<button class="btn btn-primary btn1" onclick="showhide('block')">Button 1 </button>
 
-<button class="btn btn-primary btn1" onclick="showhide('block')">Button 1 </button>
-<button class="btn btn-primary" onclick="showhide2('block')">Button 2 </button>
 
 
 	<script>
@@ -49,6 +39,9 @@
 
 		$('.btn1').on('click', function(){
 			$('#al').show();
+		})
+		$('.btn-close').on('click', function(){
+			$('#al').hide();
 		})
 
 	</script>

@@ -11,13 +11,14 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
+	<a href="../index.html" class="btn btn-outline-primary">home</a>
 
 	
-	<button class="btn btn-primary btn1" onclick="showhide('block')">모달</button>
+	<button class="btn btn-primary btn1" onclick="showhide('block')">버블링 모달</button>
 
 	<div class="black-bg">
 		<div class="white-bg">
-			<h4>로그인하세요</h4>
+			<h4>버블링</h4>
 			<form action="success.html">
 				<div class="my-3">
 					<input type="text" class="form-control">
@@ -26,7 +27,7 @@
 					 <input type="password" class="form-control">
 				 </div>
 				 <button type="submit" class="btn btn-primary">확인</button>
-				 <button type="button" class="btn btn-secondary close id="close">닫기</button>
+				 <button type="button" class="btn btn-secondary close" id="close">닫기</button>
 			</form> 
 			
 		</div>
@@ -41,7 +42,7 @@
 			<p>상품설명입니다. Product</p>
 		</div>
 		<div class="tab-content show">
-			<p>스펙설명입니다. Information</p>
+			<p>버블링</p>
 		</div>
 		<div class="tab-content">
 			<p>배송정보입니다. Shipping</p>
@@ -57,29 +58,30 @@ document.querySelector('.btn1').addEventListener('click', function(){
 document.querySelector('.close').addEventListener('click', function(){
 	document.querySelector('.black-bg').classList.remove('show-modal');
 })
+
 document.querySelector('.black-bg').addEventListener('click', function(e){
 	
-if(e.target == document.querySelector('.black-bg')){
-	document.querySelector('.black-bg').classList.remove('show-modal');
-}
+	if(e.target == document.querySelector('.black-bg')){
+		document.querySelector('.black-bg').classList.remove('show-modal');
+	}
+
+})
 // e.target; 유저가 실제로 누른거 
 // e.currentTarget; 이벤트리스너 달린 곳 
 // e.preventDefault(); 기본동작막기 
 // e.stopPropagation(); body같은 상위요소 버블링 막기 
-})
 
 
+// 텝
+function tapshow(i){
+	$('.tab-button').removeClass('orange');
+	$('.tab-button').eq(i).addClass('orange');
+	$('.tab-content').removeClass('show');
+	$('.tab-content').eq(i).addClass('show');	
+}
 $('.list').click(function(e){
 		tapshow(e.target.dataset.id);
 })
-var btnon = $('.tab-button');
-var btncon = $('.tab-content');
-function tapshow(i){
-	btnon.removeClass('orange');
-	btnon.eq(i).addClass('orange');
-	btncon.removeClass('show');
-	btncon.eq(i).addClass('show');	
-}
 </script>
 
 

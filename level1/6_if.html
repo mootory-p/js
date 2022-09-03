@@ -13,58 +13,28 @@
 
 </head>
 <body>
+	<a href="../index.html" class="btn btn-outline-primary">home</a>
+
+  <div class="container">
+		<button id="mode" class="btn bg-dark text-white">Dark Mode</button>
+
+		<div class="blue-bg">
+			<h4>아이디비번 공백 체크</h4>
+				<form action="success.html">
+					<div class="my-3">
+						<input type="text" id="id" class="form-control" placeholder="아이디">
+					 </div>
+					 <div class="my-3">
+						 <input type="password" id="pw" class="form-control" placeholder="비번 6자리이상 입력할것">
+					 </div>
+					 <button type="submit" id="gobtn" class="btn btn-primary">전송</button>
+					 <button type="button" class="btn btn-secondary close id="close">닫기</button>
+				</form>
+		</div>
+	</div>
 	
-	<nav class="navbar navbar-light bg-light">
-		<div class="container-fluid">
-			<span class="navbar-brand">Navbar</span>
-			<span id="mode" class="badge bg-dark">Dark </span>
-			<button class="navbar-toggler" type="button">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-		</div>
-	</nav> 
-	<ul class="list-group">
-		<li class="list-group-item">An item</li>
-		<li class="list-group-item">A second item</li>
-		<li class="list-group-item">A third item</li>
-		<li class="list-group-item">A fourth item</li>
-		<li class="list-group-item">And a fifth one</li>
-	</ul>
 
-
-<button id="login" class="btn btn-danger btn1" onclick="showhide('block')">로그인</button>
-
-	<div class="black-bg">
-		<div class="white-bg">
-			<h4>로그인하세요</h4>
-			<form action="success.html">
-				<div class="my-3">
-					<input type="text" class="form-control">
-				 </div>
-				 <div class="my-3">
-					 <input type="password" class="form-control">
-				 </div>
-				 <button type="submit" class="btn btn-primary">전송</button>
-				 <button type="button" class="btn btn-secondary close id="close">닫기</button>
-			</form> 
-			
-		</div>
-	</div>
-		
-
-	<div class="blue-bg">
-		<h4>로그인하세요</h4>
-			<form action="success.html">
-				<div class="my-3">
-					<input type="text" id="id" class="form-control">
-				 </div>
-				 <div class="my-3">
-					 <input type="password" id="pw" class="form-control">
-				 </div>
-				 <button type="submit" id="gobtn" class="btn btn-primary">전송</button>
-				 <button type="button" class="btn btn-secondary close id="close">닫기</button>
-			</form>
-	</div>
+	
 
 	<script>
 
@@ -72,23 +42,18 @@
 let count = 0;
 document.getElementById('mode').addEventListener('click', function(){
 	count += 1;
-	console.log(count);
 	document.querySelector('body').classList.toggle('darkmode');
   if(count % 2 == 1){
-    document.getElementById('mode').innerHTML = 'Light';
+    document.getElementById('mode').innerHTML = 'Light Mode';
 		} else {
-    document.getElementById('mode').innerHTML = 'Dark';
+    document.getElementById('mode').innerHTML = 'Dark Mode';
 	}
 })
 
 
-
-
-
-
-
 // 아이디비번 공백 체크
 		document.getElementById('gobtn').addEventListener('click', function(e){
+ // $('form').on('submit', function(e){ 이렇게 써도 동일함
 			if(document.getElementById('id').value == ''){
 				e.preventDefault();
 				alert('아이디 입력해주세요');
@@ -103,35 +68,6 @@ document.getElementById('mode').addEventListener('click', function(){
 			}
 			
 		});
-
-		// $('form').on('submit', function(e){
-		// 	if (document.getElementById('email').value == '') {
-		// 		alert('아이디 입력하쇼');
-		// 	} 
-		// 	if (document.getElementById('pw').value == ''){
-		// 		alert('비번 입력하쇼')
-		// 	}
-		// 	if (document.getElementById('pw').value.length < 6){
-		// 		alert('왜케 비번이 짧음?')
-		// 	}
-		// });
-
-
-
-
-
-// addEventListener
-		document.getElementById('id').addEventListener('input', function(){
-			console.log('aaa')
-		});
-		document.getElementById('login').addEventListener('click', function(){
-			document.querySelector('.black-bg').classList.add('show-modal');
-		})
-		document.querySelector('.close').addEventListener('click', function(){
-			document.querySelector('.black-bg').classList.remove('show-modal');
-		})
-
-
 
 		function 삼육구게임(num){
 			if (num % 9 == 0) {
