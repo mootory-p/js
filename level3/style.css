@@ -68,3 +68,15 @@ ul.list::after {
  visibility: visible;
 }
 .form-hide { display: none;}
+.box0 { height: 500px; width: 200px; background-color: tomato;}
+.box1 { height: 2000px; background-color: lemonchiffon;}
+.box1 .imgbox {  float: right; width: 40%;
+position: sticky; top:200px;}
+.box1 .textbox { float: left; width: 30%;}
+.box1 img {width: 100%;}
+
+.scrollbox { background-color: plum; height: 3000px; margin-top:300px; margin-bottom: 1000px;
+ }
+ .scrollbox .cardbox { padding-top: 50px; transition: all 0.2s;
+position: sticky; top:200px;}
+ 

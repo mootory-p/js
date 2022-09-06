@@ -27,12 +27,6 @@ var products = [
 	{id:2, price:5500, title: '전국노래자랑'},
 ]
 
-
-
-
-
-
-
 function prodlist(a, i){
 		var prodbox2 = `<div class="col-4">
 						<img src="../img/1.jpg" class="w-100">
@@ -42,12 +36,6 @@ function prodlist(a, i){
 					</div>`;
 		$('.row').append(prodbox2);
 }
-
-
-
-
-
-
 
 products.forEach(function(a, i){
 	prodlist(a, i);
@@ -78,6 +66,8 @@ $('.more').on('click', function(){
 
 })
 
+
+//구매 버튼 
 // var arr = [1,2,3];
 // var newarr = JSON.stringify(arr);
 // localStorage.setItem('num', newarr);
@@ -86,17 +76,31 @@ $('.more').on('click', function(){
 
 
 $('.buy').click(function(e){
-	
 
 	var title = $(e.target).siblings('h5').html();
-	if(localStorage.getItem('cart') != null){
-		var newcart = JSON.parse(localStorage.getItem('cart')) ;
-		newcart.push(title);
-		localStorage.setItem('cart', JSON.stringify(newcart));
-	} else {
-		localStorage.setItem('cart', JSON.stringify([title]));
-	}
+	var ccount = 0;
 	
+	if(localStorage.getItem('cart') != null){ // 두번째부터 
+
+		var newcart = JSON.parse(localStorage.getItem('cart')) ;
+
+		newcart.forEach(function(data, i){
+			if(newcart[i].name == title){
+				data.count += 1 ;
+				localStorage.setItem('cart', JSON.stringify(newcart));
+				newcart.pop();
+				
+			} else {
+				ccount += 1;
+				newcart.push({name: title, count: ccount});
+				localStorage.setItem('cart', JSON.stringify(newcart));
+				}
+		})
+		
+	} else { // 첫번째 입력
+		ccount += 1;
+		localStorage.setItem('cart', JSON.stringify([{ name: title, count: ccount}]));
+	}
 	
 });
 
