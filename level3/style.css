@@ -80,3 +80,25 @@ position: sticky; top:200px;}
  .scrollbox .cardbox { padding-top: 50px; transition: all 0.2s;
 position: sticky; top:200px;}
  
+
+
+/* cartTest */
+.cart-test { font-size: 16px; line-height: 135%;}
+.cart-test nav { background-color: black; color: #fff; display: flex; 
+align-items: center; margin-bottom: 1rem;}
+.cart-test nav a { color:#fff; text-decoration: none;}
+.cart-test nav a:hover { color:#fff; text-decoration: none;}
+.cart-test nav ul { }
+.cart-test nav ul li { list-style: none;display: inline-block; }
+
+.pdbox { border:1px solid #ccc; padding: 10px 5px; display: flex; flex-direction: column;}
+.pdbox img {width: 100%;}
+.pdbox .bn {text-align: center; align-self: center;}
+.pdbox .title { font-size: 1rem; color: #111;}
+.pdbox .brand { font-size: 0.8rem; color: #888;}
+.pdbox p {margin-bottom:7px;}
+
+
+#cartbox { background-color: rgb(205, 219, 231); padding: 1rem; width: 100%; }
+.cartlistbox { background-color: #fff; border:1px solid #ccc; padding:1rem;}
+.buybox { padding: 0.5rem; }
