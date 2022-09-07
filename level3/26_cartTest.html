@@ -20,59 +20,65 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+            <ul class="navbar-nav d-flex flex-row">
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="26_cartTest.html">새로고침</a>
+              </li>
+							<li class="nav-item">
+                <a class="nav-link" href="26_sample.html">sample</a>
               </li>
               </li>
             </ul>
           </div>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="검색어입력" aria-label="Search" id="search">
-            <button class="btn btn-outline-light srbtn" type="submit"><i class="bi bi-search"></i></button>
+            <!-- <button class="btn btn-outline-light srbtn" type="submit"><i class="bi bi-search"></i></button> -->
           </form>
         </div>
       </nav>
     </header>
     <section class="container">
-      <div class="row pdlist my-3">
+      <div class="row row-cols-4 pdlist my-3">
         
       </div>
      </section>
     <section id="cartbox" class="container">
         <h3>장바구니</h3>
-        <div class="cartlistbox">
+        <div class="basket row row-cols-4">
             여기로 드래그
         </div>
         <div class="buybox">
-            <p class="totalprice"> 최종가격 합계 : </p>
-            <button class="btn btn-danger">구매하기</button>
+            <p class="final-price"> 최종가격 합계 : </p>
+            <button class="btn btn-danger buy">구매하기</button>
         </div>
     </section>
-    <div class="black-bg">
-      <div class="buyuser white-bg">
-        <form action="">
-            <div class="mb-3 row">
-                <label for="inputPassword" class="col-sm-3 col-form-label">성함</label>
-                <div class="col-sm-9">
-                  <input type="text" class="form-control" id="inputPassword">
-                </div>
-            </div>
-            <div class="mb-3 row">
-              <label for="inputPassword" class="col-sm-3 col-form-label">연락처</label>
-              <div class="col-sm-9">
-                <input type="text" class="form-control" id="inputPassword">
-              </div>
-          </div>
-          <button>닫기</button>
-          <button>저장하고 구매완료</button>
-        </form>
-    </div>
-    </div>
-    
+   
+</div>
+<div class="modal1" style="display: none;">
+	<div class="white-bg">
+		<h4>성함</h4>
+		<input type="text" id="name">
+		<h4>연락처</h4>
+		<input type="text" id="phone">
+		<button class="show-receipt">입력완료</button>
+		<div>
+			<button class="close">닫기</button>
+		</div>
+	</div>
+</div>
+
+<div class="modal2" style="display: none;">
+	<div class="white-bg">
+		<h4>영수증</h4>
+		<canvas id="canvas" width="350" height="350"></canvas>
+		<div>
+			<button class="close">닫기</button>
+		</div>
+	</div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script> -->
 <script src="26_cartTest.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
 </body>
 </html> 

@@ -91,6 +91,7 @@ align-items: center; margin-bottom: 1rem;}
 .cart-test nav ul { }
 .cart-test nav ul li { list-style: none;display: inline-block; }
 
+.pdlist {  }
 .pdbox { border:1px solid #ccc; padding: 10px 5px; display: flex; flex-direction: column;}
 .pdbox img {width: 100%;}
 .pdbox .bn {text-align: center; align-self: center;}
@@ -100,5 +101,34 @@ align-items: center; margin-bottom: 1rem;}
 
 
 #cartbox { background-color: rgb(205, 219, 231); padding: 1rem; width: 100%; }
-.cartlistbox { background-color: #fff; border:1px solid #ccc; padding:1rem;}
+.basket { background-color: #fff; border:1px solid #ccc; padding:1rem;}
 .buybox { padding: 0.5rem; }
+.modal1, .modal2 {
+	position: fixed;
+	margin: auto;
+	padding: 30px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5); z-index: 1050;
+}
+img {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+
+.basket-wrap {
+	padding: 30px;
+	margin-top: 30px;
+}
+.basket div {
+	padding: 15px;
+	border-radius: 5px;
+}
+
+.item {
+	background: white;
+	padding: 20px;
+	margin-top: 20px;
+} 
