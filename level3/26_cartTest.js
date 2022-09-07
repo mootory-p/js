@@ -5,56 +5,58 @@
 let products = [];
 let cart = [];
 
-var proddiv = ''
-		function prodlist(data, i){
-			proddiv = `<div class="pdbox col" draggable="true" data-id="${data.id}">
-									<img src="26_assets/${data.photo}" alt="">
-									<p class="title">${data.title}</p>
-									<p class="brand">${data.brand}</p>
-									<p class="price">가격 : ${data.price}</p>
-									<p class="bn mt-auto">
-									<button class="btn btn-outline-secondary add" data-id="${data.id}"><i class="bi bi-cart-plus"></i> 담기</button>
-									</p>
-							</div>`;
-			$('.pdlist').append(proddiv);
-	};
 
- $.get('./26_assets/store.json').then(function(data){
-	 products = data.products;
-    data.products.forEach(function(a, i){
-        prodlist(a, i);
-    }); 
+function prodlist(data, i){
+	var proddiv = `<div class="pdbox col" draggable="true" data-id="${data.id}">
+							<img src="26_assets/${data.photo}" draggable="false">
+							<p class="title">${data.title}</p>
+							<p class="brand">${data.brand}</p>
+							<p class="price">가격 : ${data.price}</p>
+							<p class="bn mt-auto">
+							<button class="btn btn-outline-secondary add" data-id="${data.id}"><i class="bi bi-cart-plus"></i> 담기</button>
+							</p>
+					</div>`;
+	$('.pdlist').append(proddiv);
+};
 
-	     //========================
-      //담기버튼 누르면 일어날 일들
-      //========================
 
-      $('.add').click(function(e){
-        let productId = e.target.dataset.id;
-        let 몇번째 = cart.findIndex((data)=>{ return data.id == productId });
+
+
+$.get('./26_assets/store.json').then(function(data){
+	products = data.products;
+	products.forEach(function(a, i){
+			prodlist(a, i);
+	}); 
+	
+	//========================
+	//담기버튼 누르면 일어날 일들
+	//========================
+
+	$('.add').click(function(e){
+		let productId = e.target.dataset.id;
+		let 몇번째 = cart.findIndex((data)=>{ return data.id == productId });
+		
+		if (몇번째 == -1) {
+			let 현재상품 = products.find((data)=> { return data.id == productId });
+			현재상품.count = 1;
+			cart.push(현재상품);
+		} else {
+			cart[몇번째].count++;
+		}; 
 				
-        if (몇번째 == -1) {
-          let 현재상품 = products.find((data)=> { return data.id == productId });
-          현재상품.count = 1;
-          cart.push(현재상품);
-					console.log(현재상품.title)
-        } else {
-          cart[몇번째].count++;
-        }; 
 				
-				
-        $('.basket').html('');
-        cart.forEach((data, i)=>{
-          $('.basket').append(`
-            <div class="col-md-3 bg-white" >
-              <img src="26_assets/${data.photo}">
-              <h4>${data.title}</h4>
-              <h4>${data.brand}</h4>
-              <p>${data.price}</p>
-              <input type="number" value="${data.count}" class="item-count w-100">
-            </div>
-          `);
-        });
+		$('.basket').html('');
+		cart.forEach((data, i)=>{
+			$('.basket').append(`
+				<div class="col-md-3 bg-white" >
+					<img src="26_assets/${data.photo}">
+					<h4>${data.title}</h4>
+					<h4>${data.brand}</h4>
+					<p>${data.price}</p>
+					<input type="number" value="${data.count}" class="item-count w-100">
+				</div>
+			`);
+		});
 			
 
 
