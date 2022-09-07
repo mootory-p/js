@@ -177,7 +177,7 @@ var proddiv = ''
       c.font = '16px dotum';
       c.fillText('구매자 : ' + 성함, 20, 30);
       c.fillText('연락처 : ' + 연락처, 20, 60); 
-      c.fillText($('.final-price').html(), 20, 90); 
+      c.fillText($('.final-price').html(), 20, 120); 
 
       //상품명들 보여주려면 장바구니 상품만큼 c.fillText() 하면 되겠군요
       
