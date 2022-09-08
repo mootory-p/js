@@ -52,19 +52,21 @@ $('form').on('submit', function(e){
 });
 
 
-
+         
 
 		//정규표현식 regular expression 
-		/a/.test('abc');
+		'abc'.includes('a'); // a가 들어있니 
+		/a/.test('abc');  // a 들어있니 
 		/[a-z]/.test('asdf asdf'); //영문소문자있니
 		/[a-zA-Z]/.test('asAdf asdf'); //영문있니
-		/[ㄱ-ㅎ가-힣]/.test('asAdf asdf');
-		/[0-9]/.test('asAdf asdf');
-		/\s/.test('asAdf asdf'); //아무문자 한개 특수기호포함, 복수는 +붙임
+		/[ㄱ-ㅎ가-힣]/.test('asAdf asdf');//한국어있니 
+		/[0-9]/.test('asAdf asdf');   // 숫자있니 
+		/\s/.test('asAdf asdf'); //아무문자하나 들어있니,  특수기호포함, 복수는 +붙임
 		/^a/.test('asAdf asdf'); //a로 시작하니
 		/a$/.test('asAdf asdf'); //a로 끝나니
 		/a|b/.test('asAdf asdf'); //a 또는 b가 있니
 		/\s+@\s+\.\s+/.test('aaa@aaa.com'); //이메일주소 .은 앞에 \포함해야함
+
 </script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>

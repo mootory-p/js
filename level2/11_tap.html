@@ -38,7 +38,7 @@
 
 var btnon = $('.tab-button');
 var btncon = $('.tab-content');
-for(let i = 0; i < btnon.length; i++){
+for(let i = 0; i < btnon.length; i++){  //반복문 안의 변수는 let으로 해야. 
 	
 		btnon.eq(i).on('click', function(){
 			btnon.removeClass('orange');

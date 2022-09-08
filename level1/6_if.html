@@ -16,7 +16,10 @@
 	<a href="../index.html" class="btn btn-outline-primary">home</a>
 
   <div class="container">
-		<button id="mode" class="btn bg-dark text-white">Dark Mode</button>
+		<div class="row m-3">
+			<button id="mode" class="btn bg-dark text-white">Dark Mode</button>
+		</div>
+		
 
 		<div class="blue-bg">
 			<h4>아이디비번 공백 체크</h4>
@@ -54,6 +57,7 @@ document.getElementById('mode').addEventListener('click', function(){
 // 아이디비번 공백 체크
 		document.getElementById('gobtn').addEventListener('click', function(e){
  // $('form').on('submit', function(e){ 이렇게 써도 동일함
+	
 			if(document.getElementById('id').value == ''){
 				e.preventDefault();
 				alert('아이디 입력해주세요');
@@ -68,6 +72,13 @@ document.getElementById('mode').addEventListener('click', function(){
 			}
 			
 		});
+
+// input 인풋값이 변경되는동안 이벤트 
+//change 인풋값이 변경되고 어딘가를 클릭했을때 
+
+
+// true or false / == or != / 1 or 0 
+
 
 		function 삼육구게임(num){
 			if (num % 9 == 0) {
@@ -90,7 +101,10 @@ document.getElementById('mode').addEventListener('click', function(){
 			}
 		}
 
-
+//  var      		 /    let      		/    const 
+//              		재선언불가      		재선언불가 
+//                              		재할당불가 (변하면 안되는 상수)
+// fuction안에서/ {중괄호 안에서} /	{중괄호 안에서}
 
 
 
