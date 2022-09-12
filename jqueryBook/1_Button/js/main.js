@@ -2,42 +2,8 @@ $(function(){
     // 
     var duration = 300;
 
-    // typo ----------------------------------------
-    $('#typo').typoShadow();
-
-    // buttons1 ----------------------------------------
-    // buttons1  1행
-    $('#buttons1 button:nth-child(-n+4)')
-        .on('mouseover', function() {
-            $(this).stop(true).animate({
-                backgroundColor: '#ae5e9b',
-                color: '#fff'
-            }, duration);
-        })
-        .on('mouseout', function(){
-            $(this).stop(true).animate({
-                backgroundColor: '#fff',
-                color: '#ebc000'
-            }, duration);
-        });
-
-    // buttons1  2행
-    $('#buttons1 button:nth-child(n+5):nth-child(-n+8)')
-        .on('mouseover', function(){
-            $(this).stop(true).animate({
-                borderWidth: '12px',
-                color: '#ae5e9b'
-            }, duration, 'easeOutSine');
-        })
-        .on('mouseout', function(){
-            $(this).stop(true).animate({
-                borderWidth: '0px',
-                color: '#ebc000'
-            }, duration, 'easeOutSine');
-        });
-
     // buttons1  3행
-    $('#buttons1 button:nth-child(n+9)')
+    $('#buttons1 button')
         .on('mouseover', function(){
             $(this).find('> span')
                 .stop(true).animate({width: '100%'}, duration, 'easeOutQuad');
@@ -46,29 +12,6 @@ $(function(){
             $(this).find('> span')
                 .stop(true).animate({width: '0%'}, duration, 'easeOutQuad');
         });
-
-    // buttons2 ----------------------------------------
-    $('#buttons2 button').each(function(index){
-        //var pos = Math.random() * 80 - 40;
-        var pos = index * 40 - 40;
-        $(this).css('top', pos);
-    })
-    .on('mouseover', function(){
-        var $btn = $(this).stop(true).animate({
-            backgroundColor: '#faee00',
-            color: '#000'
-        }, duration);
-        $btn.find('img:first-child').stop(true).animate({opacity: 0}, duration);
-        $btn.find('img:nth-child(2)').stop(true).animate({opacity: 1}, duration);
-    })
-    .on('mouseout', function(){
-        var $btn = $(this).stop(true).animate({
-            backgroundColor: '#fff',
-            color: '#01b169',
-        }, duration);
-        $btn.find('img:first-child').stop(true).animate({opacity: 1}, duration);
-        $btn.find('img:nth-child(2)').stop(true).animate({opacity: 0}, duration);
-    });
 
 
     // images ----------------------------------------

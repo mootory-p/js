@@ -1,5 +1,5 @@
 $(function(){
-    var current = 0;
+  var current = 1;
 	var thumbListSize = 6;
 	var thumbnail = $('#thumbnail');
 	var prev = thumbnail.find('> .left');
@@ -11,23 +11,26 @@ $(function(){
 	var image = $('#gallery #image > p');
 	
 	next.on('click', function(){
-		if(current < maxSize / thumbListSize - 1) current++;
+		if(current < maxSize / thumbListSize  ) current++;
 		listMove();
+		$('.current').text(current);
 	});
 	
 	prev.on('click', function(){
-		if(current > 0) current--;
+		if(current > 1) current--;
 		listMove();
+		$('.current').text(current);
 	});
 	
-    function listMove(){
-        var tl = containWidth * current * -1;
-        container.stop().animate({left:tl}, {duration:400, easing:'easeOutCubic'});
-    }
+	function listMove(){
+			var tl = containWidth * (current - 1) * -1;
+			container.stop().animate({left:tl}, {duration:400});
+	}
 	
 	thumb.on('click', function(){
 		image.css('display', 'none');
 		var i = $(this).index();
 		image.eq(i).css('display', 'block');
 	});
+	
 });

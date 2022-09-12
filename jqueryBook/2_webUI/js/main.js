@@ -174,22 +174,18 @@ $(function () {
      */
     $('.work-section').each(function () {
 
-        var $container = $(this),                            // a
-            $navItems = $container.find('.tabs-nav li'),     // b
-            $highlight = $container.find('.tabs-highlight'); // c
-        // 탭의 각 요소를 jQuery 객체 화
-        // a 탭과 패널을 포함한 전체 컨테이너
-        // b 탭의 목록
-        // c 선택한 탭의 하이라이트
+        var $container = $(this),                        
+            $navItems = $container.find('.tabs-nav li'),  
+            $highlight = $container.find('.tabs-highlight'); 
+   
 
-        // jQuery UI Tabs를 실행
         $container.tabs({
 
             // 숨길 때의 애니메이션
-            hide: { duration: 250 },
+            hide: { duration: 200 },
 
             // 볼 때 애니메이션
-            show: { duration: 125 },
+            show: { duration: 100 },
 
             // 로드시와 탭 선택시에 하이라이트의 위치를 조정
             create: moveHighlight,
@@ -202,7 +198,7 @@ $(function () {
                 left = $newTab.position().left; // 새로 선택된 탭의 왼쪽 위치
 				
             // 하이라이트의 위치를 애니메이션
-            $highlight.animate({ left: left }, 500, 'easeOutExpo');
+            $highlight.animate({ left: left }, 200, 'easeOutExpo');
         }
     });
 
@@ -218,66 +214,6 @@ $(function () {
         });
     });
 
-    // Google Maps
-    function initMap () {
-        var mapContainer = document.getElementById('map-container'),
-            mapImageSrc = mapContainer.getElementsByTagName('img')[0].getAttribute('src'),
-            mapParams = decodeURIComponent(mapImageSrc.split('?')[1]).split('&'),
-            mapData = {},
-            mapStyleName = 'Mono',
-            mapStyles = [
-                {
-                    featureType: 'all',
-                    elementType: 'all',
-                    stylers: [
-                        { visibility: 'on' },
-                        { hue: '#105ea7' },
-                        { saturation: -100 },
-                        { invert_lightness: true }
-                    ]
-                },
-                {
-                    elementType: 'labels.icon',
-                    stylers: [
-                        { visibility: 'off' }
-                    ]
-                }
-            ],
-            latLng,
-            mapOptions,
-            map,
-            marker,
-            markerLatLng,
-            i,
-            len,
-            pair;
-        for (i = 0, len = mapParams.length; i < len; i++) {
-            pair = mapParams[i].split('=');
-            mapData[pair[0]] = pair[1];
-        }
-        markerLatLng = mapData.markers? mapData.markers.split(','): null;
-        latLng = mapData.center? mapData.center.split(','): markerLatLng;
-        mapOptions = {
-            center: new google.maps.LatLng(latLng[0], latLng[1]),
-            disableDefaultUI: true,
-            panControl: true,
-            zoom: +mapData.zoom || 16,
-            zoomControl: true,
-            zoomControlOptions: {
-                style: google.maps.ZoomControlStyle.SMALL
-            }
-        };
-        map = new google.maps.Map(mapContainer, mapOptions);
-        map.mapTypes.set(mapStyleName, new google.maps.StyledMapType(mapStyles, { name: mapStyleName }));
-        map.setMapTypeId(mapStyleName);
-        if (mapData.markers) {
-            marker = new google.maps.Marker({
-                position: new google.maps.LatLng(markerLatLng[0], markerLatLng[1]),
-                map: map
-            });
-        }        
-    }
-
-    initMap();
+   
 
 });

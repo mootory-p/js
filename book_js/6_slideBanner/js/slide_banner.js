@@ -4,35 +4,31 @@ $(function(){ // $(document).ready(function(){ });
     var current = 0;
     var setIntervalId;
     
-    button.on({
-        click:function(){
+    button.on({click:function(){
             var tg = $(this);
             var i = tg.index();
-
             button.removeClass('on');
             tg.addClass('on');
-
             move(i);
         }
     });
     
-    $('#wrap').on({
-        mouseover:function(){
+    $('#wrap').on({mouseover:function(){
             clearInterval(setIntervalId);
-        },
-        mouseout:function(){
+        },mouseout:function(){
             timer();
         }
     });
     
     timer();
+
     function timer(){
         setIntervalId = setInterval(function(){
             var n = current + 1;
             if(n == visual.size()){
                 n = 0;
             }
-            
+
             button.eq(n).trigger('click');
         }, 5000);
     }
