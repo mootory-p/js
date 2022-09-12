@@ -6,31 +6,24 @@ $(function () {
     $('.slideshow').each(function () {
 
     // 변수의 준비
-    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-        var $container = $(this),                                 // a
-            $slideGroup = $container.find('.slideshow-slides'),   // b
-            $slides = $slideGroup.find('.slide'),                 // c
-            $nav = $container.find('.slideshow-nav'),             // d
-            $indicator = $container.find('.slideshow-indicator'), // e
-            // 슬라이드 쇼의 각 요소의 jQuery 객체
-            // a 슬라이드 쇼 전체 컨테이너
-            // b 모든 슬라이드의 정리 (슬라이드 그룹)
-            // c 각 슬라이드
-            // d 네비게이션 (Prev/Next)
-            // e 인디게이터 (ドット)
+        var $container = $(this),                                
+            $slideGroup = $container.find('.slideshow-slides'),  
+            $slides = $slideGroup.find('.slide'),                 
+            $nav = $container.find('.slideshow-nav'),             
+            $indicator = $container.find('.slideshow-indicator'),
+      
 
-            slideCount = $slides.length, // 슬라이드 점수
+            slideCount = $slides.length, // 슬라이드 수
             indicatorHTML = '',          // 인디게이터 콘텐트
             currentIndex = 0,            // 현재 슬라이드의 인덱스
             duration = 500,              // 다음 슬라이드에 애니메이션의 소요 시간
             easing = 'easeInOutExpo',    // 다음 슬라이드에 애니메이션의 여유 종류
             interval = 7500,             // 자동으로 다음 슬라이드로 옮길 때까지의 시간
-            timer;                       // 타이머
+            timer;                      
 
 
     // HTML 요소의 배치 생성 삽입
-    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
         // 각 슬라이드의 위치를 결정하고,
         // 해당 표시기의 앵커를 생성
@@ -44,7 +37,6 @@ $(function () {
 
 
     // 함수의 정의
-    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
         // 모든 슬라이드를 표시하는 함수
         function goToSlide (index) {
@@ -123,8 +115,7 @@ $(function () {
 
 
     // 슬라이드 쇼 시작
-    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
+  
         // 첫 번째 슬라이드를 표시
         goToSlide(currentIndex);
 
@@ -133,41 +124,7 @@ $(function () {
 
     });
 
-    /*
-     * Sticky header
-     */
-    $('.page-header').each(function () {
-
-        var $window = $(window), // Window 객체
-            $header = $(this),   // 헤더
-
-            // 헤더의 복제
-            $headerClone = $header.contents().clone(),
-
-            // 헤더 복제 컨테이너
-            $headerCloneContainer = $('<div class="page-header-clone"></div>'),
-
-            // HTML의 위쪽에서 헤더의 저변까지의 거리 = 헤더의 최고 위치 + 헤더의 높이
-            threshold = $header.offset().top + $header.outerHeight();
-
-        // 컨테이너 헤더의 복제를 삽입
-        $headerCloneContainer.append($headerClone);
-
-        // 컨테이너를 body에 삽입
-        $headerCloneContainer.appendTo('body');
-
-        // 스크롤시에 작업을 수행하지만, 횟수를 1 초당 15까지 제한
-        $window.on('scroll', $.throttle(1000 / 15, function () {
-            if ($window.scrollTop() > threshold) {
-                $headerCloneContainer.addClass('visible');
-            } else {
-                $headerCloneContainer.removeClass('visible');
-            }
-        }));
-
-        // 스크롤 이벤트를 발생시켜 초기 위치를 결정
-        $window.trigger('scroll');
-    });
+    
 
     /*
      * Tabs
@@ -182,10 +139,10 @@ $(function () {
         $container.tabs({
 
             // 숨길 때의 애니메이션
-            hide: { duration: 200 },
+            hide: { duration: 0 },
 
             // 볼 때 애니메이션
-            show: { duration: 100 },
+            show: { duration: 0 },
 
             // 로드시와 탭 선택시에 하이라이트의 위치를 조정
             create: moveHighlight,
@@ -198,7 +155,7 @@ $(function () {
                 left = $newTab.position().left; // 새로 선택된 탭의 왼쪽 위치
 				
             // 하이라이트의 위치를 애니메이션
-            $highlight.animate({ left: left }, 200, 'easeOutExpo');
+            $highlight.animate({ left: left }, 250);
         }
     });
 
@@ -206,11 +163,9 @@ $(function () {
      * Back-toTop button (Smooth scroll)
      */
     $('.back-to-top').on('click', function () {
-
-        // Smooth Scroll 플러그인을 실행
+				// Smooth Scroll 플러그인을 실행
         $.smoothScroll({
-            easing: 'easeOutExpo', // 이징의 종류
-            speed: 500             // 소요 시간
+            easing: 'easeOutExpo', speed: 500 
         });
     });
 

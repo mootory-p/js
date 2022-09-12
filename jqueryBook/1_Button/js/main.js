@@ -17,28 +17,8 @@ $(function(){
     // images ----------------------------------------
     var $images = $('#images p');
 
-    // images 첫번째 이미지
-    $images.filter(':nth-child(1)')
-        .on('mouseover', function(){
-            $(this).find('strong, span').stop(true).animate({opacity: 1}, duration);
-        })
-        .on('mouseout', function(){
-            $(this).find('strong, span').stop(true).animate({opacity: 0}, duration);
-        });
-
-    // images 두번째 이미지
-    $images.filter(':nth-child(2)')
-        .on('mouseover', function(){
-            $(this).find('strong').stop(true).animate({opacity: 1, left: '0%'}, duration);
-            $(this).find('span').stop(true).animate({opacity: 1}, duration);
-        })
-        .on('mouseout', function(){
-            $(this).find('strong').stop(true).animate({opacity: 0, left: '-200%'}, duration);
-            $(this).find('span').stop(true).animate({opacity: 0}, duration);
-        });
-
     // images 세번째 이미지
-    $images.filter(':nth-child(3)')
+    $images.filter(':nth-child(1)')
         .on('mouseover', function(){
             $(this).find('strong').stop(true).animate({bottom: '0px'}, duration);
             $(this).find('span').stop(true).animate({opacity: 1}, duration);
@@ -57,10 +37,10 @@ $(function(){
         .on('click', function(){
             $aside.toggleClass('open');
             if($aside.hasClass('open')){
-                $aside.stop(true).animate({left: '-70px'}, duration, 'easeOutBack');
+                $aside.stop(true).animate({left: '-70px'}, duration);
                 $asidButton.find('img').attr('src', 'img/btn_close.png');
             }else{
-                $aside.stop(true).animate({left: '-350px'}, duration, 'easeInBack');
+                $aside.stop(true).animate({left: '-350px'}, duration);
                 $asidButton.find('img').attr('src', 'img/btn_open.png');
             };
         });
