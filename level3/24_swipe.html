@@ -45,18 +45,22 @@ $('.slide-wrap').eq(0).on('mousemove',function(e){
 $('.slide-wrap').eq(0).on('mouseup',function(e){
 	눌렀니 = false;
 	if(e.clientX - start <= -100){
-			document.querySelector('.slide-wrap').style.transform = 'translateX(-300px)';
+		$('.slide-wrap').css('transition', 'all 0.5s').css('transform', 'translateX(-300px)');
 			curr = 2;
 			$('#curr').html(curr);
 		}  else if ( e.clientX - start >= -99 && e.clientX - start <= 99){
-			document.querySelector('.slide-wrap').style.transform = 'translateX(0px)';
+			$('.slide-wrap').css('transition', 'all 0.5s').css('transform', 'translateX(0px)');
 			curr = 1;
 			$('#curr').html(curr);
 		} else if ( e.clientX - start >= 100){
-			document.querySelector('.slide-wrap').style.transform = 'translateX(-600px)';
+			$('.slide-wrap').css('transition', 'all 0.5s').css('transform', 'translateX(-600px)');
 			curr = 3;
 			$('#curr').html(curr);
 		}
+
+		setTimeout(()=>{
+      $('.slide-wrap').css('transition', 'none')
+    }, 500)
 });
 
 //모바일에서 터치시 
@@ -65,6 +69,7 @@ $('.slide-wrap').eq(0).on('touchstart',function(e){
   start = e.touches[0].clientX;
 	눌렀니 = true;
 });
+//브라우저 호환성을 위해 hammer.js 사용 
 
 
 

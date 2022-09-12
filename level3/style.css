@@ -75,9 +75,9 @@ position: sticky; top:200px;}
 .box1 .textbox { float: left; width: 30%;}
 .box1 img {width: 100%;}
 
-.scrollbox { background-color: plum; height: 3000px; margin-top:300px; margin-bottom: 1000px;
+.scrollbox { background-color: plum; height: 1000px; margin-top:300px; margin-bottom: 3000px;
  }
- .scrollbox .cardbox { padding-top: 50px; transition: all 0.2s;
+ .scrollbox .cardbox { padding-top: 50px; transition: all 0.2s; width: 450px;
 position: sticky; top:200px;}
  
 

@@ -51,7 +51,7 @@ $('.more').on('click', function(){
 			data.forEach(function(a, i){
 				prodlist(a, i);
 			})
-		}).fail(function(){})
+		})
  } else if (btncount == 2){
 		$.get('https://codingapple1.github.io/js/more2.json')
 		.done(function(data){
@@ -59,7 +59,7 @@ $('.more').on('click', function(){
 				prodlist(a, i);
 			});
 			$('.more').hide();
-		}).fail(function(){})
+		})
  }
 	
 
