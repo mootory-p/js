@@ -19,37 +19,20 @@ $(function () {
             itemSelector: '.gallery-item'
         });
 
-        // JSON을 검색하고 initGallery 함수를 실행
         $.getJSON('./data/content.json', initGallery);
 
         //갤러리 초기화
         function initGallery (data) {
-
-            // 취득한 JSON 데이터를 저장
             allData = data;
-
-            // 초기 상태에서는 필터링하지 않고 그대로 전체 데이터를 전달
-            filteredData = allData;
-
-            // 첫 번째 항목을 표시
-            addItems();
-
-            // 추가 버튼을 클릭하면 추가로 표시
+						filteredData = allData;  // 처음엔 필터링 없음 
+            addItems(); // 첫 번째 항목을 표시
             $loadMoreButton.on('click', addItems);
-
-            // 필터 라디오 버튼이 변경되면 필터링을 수행
             $filter.on('change', 'input[type="radio"]', filterItems);
-
-// 06-04 に追加
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-            // 항목 링크에 호버 효과 처리 등록
             $container.on('mouseenter mouseleave', '.gallery-item a', hoverDirection);
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         }
 
         // 항목을 생성하고 문서에 삽입
         function addItems (filter) {
-
             var elements = [],
                 // 추가 데이터의 배열
                 slicedData = filteredData.slice(addedd, addedd + addItemCount);
@@ -122,7 +105,6 @@ $(function () {
             addedd = 0;
 
             if (key === 'all') {
-                // all이 클릭 된 경우 모든 JSON 데이터를 저장
                 filteredData = allData;
             } else {
                 // all 이외의 경우, 키와 일치하는 데이터를 추출
@@ -135,17 +117,14 @@ $(function () {
             addItems(true);
         }
 
-// 06-04에 추가
+
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         // 호버 효과
         function hoverDirection (event) {
             var $overlay = $(this).find('.caption'),
                 side = getMouseDirection(event),
                 animateTo,
-                positionIn = {
-                    top:  '0%',
-                    left: '0%'
-                },
+                positionIn = { top: '0%',left: '0%'},
                 positionOut = (function () {
                     switch (side) {
                         // case 0: top, case 1: right, case 2: bottom, default: left
@@ -161,11 +140,11 @@ $(function () {
             } else {
                 animateTo = positionOut;
             }
-            $overlay.stop(true).animate(animateTo, 250, 'easeOutExpo');
+            $overlay.stop(true).animate(animateTo, 250);
+					  
         }
 
         // 마우스의 방향을 감지하는 함수
-        // http://stackoverflow.com/a/3647634
         function getMouseDirection (event) {
             var $el = $(event.currentTarget),
                 offset = $el.offset(),
@@ -179,12 +158,7 @@ $(function () {
     });
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-    // jQuery UI Button
-    $('.filter-form input[type="radio"]').button({
-        icons: {
-            primary: 'icon-radio'
-        }
-    });
+
 
     // Resize page header
     $('.page-header').each(function () {

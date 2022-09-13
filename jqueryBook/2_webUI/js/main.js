@@ -38,49 +38,38 @@ $(function () {
 
     // 함수의 정의
 
-        // 모든 슬라이드를 표시하는 함수
         function goToSlide (index) {
-            // 슬라이드 그룹을 대상 위치에 맞게 이동
             $slideGroup.animate({ left: - 100 * index + '%' }, duration, easing);
-            // 현재 슬라이드의 인덱스를 덮어쓰기
             currentIndex = index;
-            // 탐색 및 표시 상태를 업데이트
             updateNav();
         }
 
-        // 슬라이드의 상태에 따라 탐색 및 표시를 업데이트하는 함수
         function updateNav () {
-            var $navPrev = $nav.find('.prev'), // Prev (뒤로) 링크
-                $navNext = $nav.find('.next'); // Next (앞으로) 링크
-            // 만약 첫 번째 슬라이드이라면 Prev 탐색을 해제
+            var $navPrev = $nav.find('.prev'), 
+                $navNext = $nav.find('.next'); 
+
             if (currentIndex === 0) {
                 $navPrev.addClass('disabled');
             } else {
                 $navPrev.removeClass('disabled');
             }
-            // 만약 마지막 슬라이드이라면 Next 탐색을 해제
             if (currentIndex === slideCount - 1) {
                 $navNext.addClass('disabled');
             } else {
                 $navNext.removeClass('disabled');
             }
-            // 현재 슬라이드의 표시를 해제
+          
             $indicator.find('a').removeClass('active')
                 .eq(currentIndex).addClass('active');
         }
 
-        // 타이머를 시작하는 함수
         function startTimer () {
-            // 변수 interval에서 설정 한 시간이 경과 할 때마다 작업을 수행
             timer = setInterval(function () {
-                // 현재 슬라이드의 인덱스에 따라 다음 표시 할 슬라이드의 결정
-                // 만약 마지막 슬라이드이라면 첫 번째 슬라이드에
                 var nextIndex = (currentIndex + 1) % slideCount;
                 goToSlide(nextIndex);
             }, interval);
         }
 
-        // 타이머를 중지있는 함수
         function stopTimer () {
             clearInterval(timer);
         }
@@ -118,8 +107,6 @@ $(function () {
   
         // 첫 번째 슬라이드를 표시
         goToSlide(currentIndex);
-
-        // 타이머를 시작
         startTimer();
 
     });
@@ -165,7 +152,7 @@ $(function () {
     $('.back-to-top').on('click', function () {
 				// Smooth Scroll 플러그인을 실행
         $.smoothScroll({
-            easing: 'easeOutExpo', speed: 500 
+            speed: 300 
         });
     });
 

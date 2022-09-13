@@ -295,21 +295,14 @@ button {
     opacity: 0;
 }
 
-#images p:nth-child(1) strong　{
-    opacity: 0;
-}
 
-#images p:nth-child(2) strong {
-    opacity: 0;
-    left: -200%;
-}
 
-#images p:nth-child(3) strong {
+#images p:nth-child(1) strong {
     bottom: -80px;
-    background: rgba(34, 34, 34, 1);
+    background:#000;
 }
 
-#images p:nth-child(3) img {
+#images p:nth-child(1) img {
     position: absolute;
     top: 0px;
 }

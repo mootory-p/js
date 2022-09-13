@@ -33,8 +33,7 @@ $(function(){
 
     // aside ----------------------------------------
     var $aside = $('.page-main > aside');
-    var $asidButton = $aside.find('button')
-        .on('click', function(){
+    var $asidButton = $aside.find('button').on('click', function(){
             $aside.toggleClass('open');
             if($aside.hasClass('open')){
                 $aside.stop(true).animate({left: '-70px'}, duration);
