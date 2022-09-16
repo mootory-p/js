@@ -4,7 +4,8 @@
 	scroll-behavior: auto;
 }
 * { box-sizing: border-box; }
-.darkmode { background-color: darkslateblue; color:fff}
+body.dark { background-color: #111; }
+.darkmode { background-color: darkslateblue; color:#fff}
 
 .alert-box { background-color: powderblue; 
 padding: 20px; border-radius: 4px;
