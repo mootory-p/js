@@ -16,9 +16,15 @@
 	<a href="../index.html" class="btn btn-outline-primary">home</a>
 
   <div class="container">
+
 		<div class="row m-3">
 			<button id="mode" class="btn bg-dark text-white">Dark Mode</button>
 		</div>
+
+		<div class="m-5">
+			<div class="c-mode"></div>
+		</div>
+		
 		
 
 		<div class="blue-bg">
@@ -52,6 +58,24 @@ document.getElementById('mode').addEventListener('click', function(){
     document.getElementById('mode').innerHTML = 'Dark Mode';
 	}
 })
+
+// darkmode 기억해놓기
+const body = document.querySelector('body'),
+cMode = document.querySelector('.c-mode');
+let getMode = localStorage.getItem('mode');
+if(getMode && getMode == 'dark'){
+	cMode.classList.add('dark');
+	body.classList.add('darkmode');
+}
+
+cMode.addEventListener('click', () => {
+	cMode.classList.toggle('dark');
+	body.classList.toggle('darkmode');
+	if(!body.classList.contains('darkmode')){
+		return localStorage.setItem('mode', 'light');
+	}
+	localStorage.setItem('mode', 'dark');
+});
 
 
 // 아이디비번 공백 체크
