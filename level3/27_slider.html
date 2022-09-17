@@ -64,7 +64,7 @@ for(let i =0; i<sCount; i++){
   var dots= `<a href="#">${i}</a>`;
   $('.slide-dot').append(dots);
   $('.slide-dot a').eq(i).on('click', function(e, i){
-    e.preventDefault();
+    e.preventDefault;
     sNext = $(e.currentTarget).index();
     gotoSlide(sNext);
     $('.slide-dot a').removeClass('active');
