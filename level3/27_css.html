@@ -16,6 +16,9 @@ border:1px solid #6194e7; cursor: pointer; }
 position: absolute; left: 4px; top: 50%;border-radius: 50%; transform: translateY(-50%); transition: all 0.2s;}
 .c-mode.dark::before { left:calc(50px - 24px) ; background-color: #2d3f5a;}
 
+
+
+
 .a-check { display: flex;align-items: center;}
 .a-check input[type='checkbox'] { appearance: none; height: 24px; width: 24px; border:1px solid #d5d5d5;
 background-color: #f5f5f5; border-radius: 4px; margin-right:10px; cursor: pointer; outline: none;
@@ -23,9 +26,54 @@ display: flex; align-items: center; justify-content: center;}
 .a-check label {cursor: pointer; }
 .a-check input[type='checkbox']::after { content: '\F633';font-family: "bootstrap-icons";color:white; 
 font-weight: bold; font-size: 1rem; display: none;}
-		.a-check input[type='checkbox']:checked { background-color: blue;}
-		.a-check input[type='checkbox']:checked::after { display: block;}
+.a-check input[type='checkbox']:checked { background-color: blue;}
+.a-check input[type='checkbox']:checked::after { display: block;}
 	
+
+
+/* 텝 */
+
+ul.list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid #ccc;
+}
+ul.list::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.tab-button {
+	display: block;
+	padding: 10px 20px 10px 20px;
+	float: left;
+	margin-right: -1px;
+	margin-bottom: -1px;
+	color: grey;
+	text-decoration: none;
+	cursor: pointer;
+}
+.orange {
+	border-top: 2px solid orange;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid white;
+	border-left: 1px solid #ccc;
+	color: black;
+	margin-top: -2px;
+}
+.tab-content {
+	display: none;
+	padding: 10px;
+}
+.show {
+	display: block;
+}
+
+
+
+
+		/* alert창 */
 	.c-alert-wrap { background-color: rgba(0,0,0,0.5); display: flex;
 	align-items: center; justify-content: center; padding: 20px;}
 	.c-alert { background-color: #fff; border:1px solid #ccc;
@@ -38,7 +86,7 @@ font-weight: bold; font-size: 1rem; display: none;}
 		.c-alert .img { width: 100%; height: 70px; margin-top: 35px; margin-bottom: 10px; 
 			display: flex; justify-content: center; align-items: center; }
 			.c-alert .img i { color:#6194e7; font-size: 3rem;}
-			.c-alert h3 {text-align: center; font-size: 1.2rem; color: #6194e7; }
+			.c-alert h3 {text-align: center; font-size: 1.2rem; color: #6194e7; font-weight: bold;}
 			.c-alert .small { padding: 5px 25px; line-height: 150%;
 			font-size: 0.85rem; text-align: center;}
 		
@@ -46,8 +94,8 @@ font-weight: bold; font-size: 1rem; display: none;}
 			.c-alert .bt { text-align: center; margin-bottom:60px; height: 40px;
 			} 
 			.c-alert button {border:1px solid ;font-size: 15px; margin : 0 3px;min-width: 90px; height: 35px; border-radius: 2px;}
-		  .c-alert .subx { color: #888; background-color: #eee; border-color: #ccc; }
-		  .c-alert .subok { }
+		  .c-alert .subx { color: #666; background-color: #f5f5f5; border-color: #bbb; }
+		  .c-alert .subok { background-color: #4478ca; color:#fff; border-color: #3864aa; }
 		
 			.c-alert .noshow { position: absolute; width: 100%; height: 32px;
 				background-color: #edeeef; color:#666; font-size: 0.8rem;
@@ -56,7 +104,43 @@ font-weight: bold; font-size: 1rem; display: none;}
 				 .c-alert .noshow input, 
 				 .c-alert .noshow label { cursor: pointer;}
 				 .c-alert .noshow input { width: 16px; height: 16px; margin-right: 8px;}
-	
+
+
+/* 가입하기 */
+				 .join-wrap {   display: flex; background: linear-gradient(120deg, #2980b9, #8244ad);
+						align-items: center; justify-content: center; padding: 20px; width: 100%;}
+					.join { background-color: #fff;border:1px solid #ccc; 
+						width: 400px;min-height: 600px; padding: 40px; 
+					}
+					.join h3 { color:#6194e7; font-size: 1.8rem; font-weight: bold; border-bottom: 1px solid #d5d5d5;
+					padding-bottom: 10px; margin-bottom: 30px;}
+					.join-form input {height: 45px; width: 100%; margin-bottom: 12px; border:1px solid #d5d5d5;
+					padding: 5px 5px 5px 35px;} 
+					.join-form input:focus { border:1px solid #6194e7; outline: none;}
+					.join-form .input-wrap {position: relative;}
+					.join-form input ~ span { position: absolute; width: 30px; height: 45px ;   
+					 left:12px; top:0px;display: flex; align-items: center;
+					 color:#aaa;font-size:0.85rem; pointer-events: none; }
+					 .join-form input:focus ~ span {color:#6194e7; }
+
+					 .join-form .info { display: flex; align-items: center;font-size:0.8rem; }
+					 .join-form input[type='checkbox'] {appearance: none; width: 20px; height: 20px; 
+						border:1px solid #d5d5d5; cursor: pointer; outline: none;margin-right: 10px; margin-bottom: 0;
+display: flex; align-items: center; justify-content: center; padding: 0;}
+.join-form input[type='checkbox']::after { content: '\F633';font-family: "bootstrap-icons";color:white; 
+font-weight: bold; font-size: 1rem; display: none;}
+.join-form input[type='checkbox']:checked { background-color:#6194e7;}
+.join-form input[type='checkbox']:checked::after { display: block;}
+.join-form button[type='submit'] { width: 100%; height: 45px; color: #fff ; background-color:#6194e7;
+	border:1px solid #3e6fbe; margin-bottom: 15px;}
+	.sns-login { margin-top:15px; border-top:1px solid #d5d5d5; padding-top: 30px;}
+.sns-login button { width: 100%; height: 45px; margin-bottom:15px; border:0; outline: none; font-size: 0.8rem;}
+.sns-login button.kakao { background-color: #fcdb24; }
+.sns-login button.google { background-color: #e9f0f3;border:1px solid #dde9ef;}
+.sns-login button.naver { background-color: #56b059; color:#fff; border:1px solid #ccc;}
+.sns-login button i { margin-right: 10px;}
+.sns-login button.naver span { font-weight: bold; margin-right: 10px; font-size: 1rem;}
+.sns-login button.google i { color: rgb(240, 87, 87);}	
 	</style>
 </head>
 <body>
@@ -107,7 +191,32 @@ font-weight: bold; font-size: 1rem; display: none;}
 	</div>
 </div>
 		
-
+<div class="join-wrap">
+	<div class="join">
+		<h3>JOIN</h3>
+		<form action="" class="join-form">
+			<div class="input-wrap">
+				<input type="email" id="email" placeholder="email"><span><i class="bi bi-envelope"></i></span>
+			</div>
+			<div class="input-wrap">
+				<input type="password" id="pw" placeholder="password"><span><i class="bi bi-key"></i></span>
+			</div>
+			
+			
+			<p class="info">
+				<input type="checkbox" id="remember">
+				<label for="remember">아이디 기억하기</label>
+			</p>
+			<button type="submit">가입하기</button>
+		</form>
+		<div class="sns-login">
+			<button type="submit" class="kakao"><i class="bi bi-chat-fill"></i>카카오로 가입하기</button>
+			<button type="submit" class="naver"><span>N</span>네이버로 가입하기</button>
+			<button type="submit" class="google"><i class="bi bi-google"></i>구글아이디로 가입히가</button>
+		</div>
+		
+	</div>
+</div>
 
 
   </div>

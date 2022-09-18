@@ -15,15 +15,20 @@
 .slide-box .slide {width:500px;float: left; height:300px;display: inline-block; transition:all 0.2s; }
 .slide-box .slide img { width:100%;height:auto;}
 .slide-box .slide-nav { position:absolute; width:100%; height:50px; top:calc(50% - 50px / 2); display:flex; align-items:center;}
-.slide-box .slide-nav a { width:50px; height:50px; border-radius:50%; background-color:rgba(255,255,255,0.5);
-   color:white; display:flex;align-items:center; justify-content:center; font-size:0.8rem; text-decoration:none; position:absolute; }
-.slide-box .slide-nav a:hover { background-color: rgba(255,255,255,1); }
+.slide-box .slide-nav a { width:50px; height:50px; border-radius:50%; 
+	background-color:rgba(255,255,255,0);
+    display:flex;align-items:center; justify-content:center; font-size:0.8rem;
+		 text-decoration:none; position:absolute; }
+.slide-box .slide-nav a:hover { background-color:rgba(255,255,255,0.2);}
+		.slide-box .slide-nav a i { font-size: 1.5rem; font-weight: lighter;color:white;}
+	 
 .slide-box .slide-nav a.prev { left:10px;top:0; }
 .slide-box .slide-nav a.next { right:10px;top:0; }
 .slide-box .slide-nav a.disable { display: none;}
-.slide-box .slide-dot { position:absolute; bottom:10px; width:100px; height:20px; left:50%; transform:translateX(-50%);display:flex;align-items:center; justify-content:center; }
-.slide-box .slide-dot a {  width:20px; height:20px; border-radius:50%; background:blue; margin: 0 3px; color:white; font-size:0.8rem;display:flex;align-items:center; justify-content:center; }
-.slide-box .slide-dot a.active { background:yellow;}
+.slide-box .slide-dot { position:absolute; bottom:10px; width:max-content; height:20px; left:50%; transform:translateX(-50%);display:flex;align-items:center; justify-content:center; }
+.slide-box .slide-dot a {  width:18px; height:18px;text-indent: -9999px; border-radius:50%;
+	 background:rgba(255,255,255,0.5); margin: 0 5px; color:white; font-size:0.8rem;display:flex;align-items:center; justify-content:center; }
+.slide-box .slide-dot a.active {background:rgba(255,255,255,1);}
 
 
 
@@ -44,8 +49,8 @@
   </div>
   
   <div class="slide-nav">
-    <a href="#" class="prev">Prev</a>
-    <a href="#" class="next">Next</a>
+    <a href="#" class="prev"><i class="bi bi-chevron-left"></i></a>
+    <a href="#" class="next"><i class="bi bi-chevron-right"></i></a>
   </div>
   <div class="slide-dot"></div>
 </div>
@@ -65,10 +70,14 @@ for(let i =0; i<sCount; i++){
   $('.slide-dot').append(dots);
   $('.slide-dot a').eq(i).on('click', function(e, i){
     e.preventDefault;
+		if($(e.currentTarget).hasClass('active')){
+			return;
+		}
     sNext = $(e.currentTarget).index();
     gotoSlide(sNext);
     $('.slide-dot a').removeClass('active');
     $(e.currentTarget).addClass('active');
+		
   })
 }; 
 
