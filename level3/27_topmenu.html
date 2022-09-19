@@ -21,22 +21,29 @@ nav .logo { font-weight: bold; color:#333; font-size: 1.5rem;}
   position: relative; 
   
   list-style: none; display: inline-block; }
-	.topmenu .d1 a.active { color :#0f83ff;}
+.topmenu .d1 a.active { color :#0f83ff;}
 .topmenu .d1 a { font-size: 1rem; padding:15px 25px; }
 .topmenu .d1 .d2-wrap {  display: none;width: max-content; min-width:120px;
 position: absolute; top:46px; left:0; padding-top: 15px;
 
 }
 .topmenu .d1 .d2 {
-  transition: all 0.2s;
-   background-color: #fff; width:100%;
-  border:1px solid #d5d5d5; border-radius: 0 0 5px 5px;
   
+  background-color: #fff; width:100%;
+  border:1px solid #d5d5d5; border-radius: 0 0 5px 5px;
   box-shadow:2px 3px 5px rgba(0,0,0,0.15);
+	
+	
+
 }
-.topmenu .d1 .d2-wrap.show { display: block;}
+
+
+
+.topmenu .d1 .d2-wrap.show { display: block;  }
+
+
 .topmenu .d1 .d2 li { transition: all 0.2s;
-  animation: menuMove 0.2s ease-in-out forwards;; 
+  animation: menuMove 0.2s ease-in-out forwards;
   animation-delay: calc(0.1s * var(--i));
   list-style: none; display: block;
   opacity: 0; transform: translateY(-10px);
