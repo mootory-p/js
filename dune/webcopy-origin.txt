@@ -1,0 +1,332 @@
+Uri: https://dunegames.com/
+File Name: C:\Users\user\Desktop\dunegames.com\index.htm
+Content Type: text/html
+
+Uri: https://dunegames.com/assets/built/css/index.20220914141829.css
+File Name: C:\Users\user\Desktop\dunegames.com\assets\built\css\index.20220914141829.css
+Content Type: text/css
+
+Uri: https://seabass-cdn.dunegames.com/img/apple-touch-icon.png
+File Name: C:\Users\user\Desktop\dunegames.com\img\apple-touch-icon.png
+Content Type: image/png
+
+Uri: https://seabass-cdn.dunegames.com/img/favicon-32x32.png
+File Name: C:\Users\user\Desktop\dunegames.com\img\favicon-32x32.png
+Content Type: image/png
+
+Uri: https://seabass-cdn.dunegames.com/img/favicon-16x16.png
+File Name: C:\Users\user\Desktop\dunegames.com\img\favicon-16x16.png
+Content Type: image/png
+
+Uri: https://seabass-cdn.dunegames.com/img/site.webmanifest
+File Name: C:\Users\user\Desktop\dunegames.com\img\site.webmanifest
+Content Type: binary/octet-stream
+
+Uri: https://seabass-cdn.dunegames.com/img/safari-pinned-tab.svg
+File Name: C:\Users\user\Desktop\dunegames.com\img\safari-pinned-tab.svg
+Content Type: image/svg+xml
+
+Uri: https://spicewars.dunegames.com/
+File Name: C:\Users\user\Desktop\dunegames.com\index-1.htm
+Content Type: text/html
+
+Uri: https://www.funcom.com/
+File Name: C:\Users\user\Desktop\dunegames.com\index-2.htm
+Content Type: text/html
+
+Uri: https://www.levelinfinite.com/
+File Name: C:\Users\user\Desktop\dunegames.com\index-3.htm
+Content Type: text/html
+
+Uri: https://www.legendary.com/
+File Name: C:\Users\user\Desktop\dunegames.com\index-4.htm
+Content Type: text/html
+
+Uri: https://dunenovels.com/
+File Name: C:\Users\user\Desktop\dunegames.com\index-5.htm
+Content Type: text/html
+
+Uri: https://www.funcom.com/privacy-policy/
+File Name: C:\Users\user\Desktop\dunegames.com\privacy-policy\index.htm
+Content Type: text/html
+
+Uri: https://www.facebook.com/DuneAwakening
+File Name: C:\Users\user\Desktop\dunegames.com\DuneAwakening-1.html
+Content Type: text/html
+
+Uri: https://www.instagram.com/duneawakening/
+File Name: C:\Users\user\Desktop\dunegames.com\duneawakening\index.htm
+Content Type: text/html
+
+Uri: https://store.steampowered.com/app/1172710/Dune_Awakening/?utm_source=website?utm_campaign=announce?utm_term=EN
+File Name: C:\Users\user\Desktop\dunegames.com\app\1172710\Dune_Awakening\index.htm
+Content Type: text/html
+
+Uri: https://cc.cdn.civiccomputing.com/9/cookieControl-9.x.min.js
+File Name: C:\Users\user\Desktop\dunegames.com\9\cookieControl-9.x.min.js
+Content Type: application/javascript
+
+Uri: https://dunegames.com/assets/built/js/CookieControlConfig.js
+File Name: C:\Users\user\Desktop\dunegames.com\assets\built\js\CookieControlConfig.js
+Content Type: application/javascript
+
+Uri: https://www.googletagmanager.com/ns.html?id=GTM-T55QHVZ
+File Name: C:\Users\user\Desktop\dunegames.com\ns.html
+Content Type: text/html
+
+Uri: https://seabass-cdn.dunegames.com/uploads/img/dune-logo-07e5ab.png
+File Name: C:\Users\user\Desktop\dunegames.com\uploads\img\dune-logo-07e5ab.png
+Content Type: image/png
+
+Uri: https://seabass-cdn.dunegames.com/uploads/img/exp-desc-shape-3d562f.png
+File Name: C:\Users\user\Desktop\dunegames.com\uploads\img\exp-desc-shape-3d562f.png
+Content Type: image/png
+
+Uri: https://seabass-cdn.dunegames.com/uploads/img/funcom-d39638.png
+File Name: C:\Users\user\Desktop\dunegames.com\uploads\img\funcom-d39638.png
+Content Type: image/png
+
+Uri: https://seabass-cdn.dunegames.com/uploads/img/lvlinfinite-ff8ebc.png
+File Name: C:\Users\user\Desktop\dunegames.com\uploads\img\lvlinfinite-ff8ebc.png
+Content Type: image/png
+
+Uri: https://seabass-cdn.dunegames.com/uploads/img/legendary-4732f3.png
+File Name: C:\Users\user\Desktop\dunegames.com\uploads\img\legendary-4732f3.png
+Content Type: image/png
+
+Uri: https://seabass-cdn.dunegames.com/uploads/img/dunenovels-c2191f.png
+File Name: C:\Users\user\Desktop\dunegames.com\uploads\img\dunenovels-c2191f.png
+Content Type: image/png
+
+Uri: https://seabass-cdn.dunegames.com/uploads/img/mobile-landscape2-e323ad.jpg
+File Name: C:\Users\user\Desktop\dunegames.com\uploads\img\mobile-landscape2-e323ad.jpg
+Content Type: image/jpeg
+
+Uri: https://seabass-cdn.dunegames.com/uploads/img/60prc/dune-logo-with-glow-centered-e43486.png
+File Name: C:\Users\user\Desktop\dunegames.com\uploads\img\60prc\dune-logo-with-glow-centered-e43486.png
+Content Type: image/png
+
+Uri: https://seabass-cdn.dunegames.com/uploads/docs/sandstorm-opaque-27a522.mp4
+File Name: C:\Users\user\Desktop\dunegames.com\uploads\docs\sandstorm-opaque-27a522.mp4.mpeg
+Content Type: video/mpeg
+
+Uri: https://seabass-cdn.dunegames.com/uploads/docs/sand-c5e10e.webm
+File Name: C:\Users\user\Desktop\dunegames.com\uploads\docs\sand-c5e10e.webm
+Content Type: text/*
+
+Uri: https://seabass-cdn.dunegames.com/img/env-images/env-layer1-fixed.png
+File Name: C:\Users\user\Desktop\dunegames.com\img\env-images\env-layer1-fixed.png
+Content Type: image/png
+
+Uri: https://seabass-cdn.dunegames.com/img/env-images/env-layer1-loop.png
+File Name: C:\Users\user\Desktop\dunegames.com\img\env-images\env-layer1-loop.png
+Content Type: image/png
+
+Uri: https://seabass-cdn.dunegames.com/img/env-images/env-layer2-fixed.png
+File Name: C:\Users\user\Desktop\dunegames.com\img\env-images\env-layer2-fixed.png
+Content Type: image/png
+
+Uri: https://seabass-cdn.dunegames.com/img/env-images/env-layer2-loop.png
+File Name: C:\Users\user\Desktop\dunegames.com\img\env-images\env-layer2-loop.png
+Content Type: image/png
+
+Uri: https://seabass-cdn.dunegames.com/uploads/img/keyart1-98e4c9.png
+File Name: C:\Users\user\Desktop\dunegames.com\uploads\img\keyart1-98e4c9.png
+Content Type: image/png
+
+Uri: https://seabass-cdn.dunegames.com/uploads/docs/sable-drop-losange-alpha-v2-20897a.mp4
+File Name: C:\Users\user\Desktop\dunegames.com\uploads\docs\sable-drop-losange-alpha-v2-20897a.mp4.mpeg
+Content Type: video/mpeg
+
+Uri: https://seabass-cdn.dunegames.com/uploads/docs/sable-drop-losange-alpha-v3-854773.webm
+File Name: C:\Users\user\Desktop\dunegames.com\uploads\docs\sable-drop-losange-alpha-v3-854773.webm
+Content Type: video/webm
+
+Uri: https://seabass-cdn.dunegames.com/uploads/img/keyart1-big-517a3c.jpg
+File Name: C:\Users\user\Desktop\dunegames.com\uploads\img\keyart1-big-517a3c.jpg
+Content Type: image/jpeg
+
+Uri: https://seabass-cdn.dunegames.com/uploads/img/keyart-3-4ce8a0.png
+File Name: C:\Users\user\Desktop\dunegames.com\uploads\img\keyart-3-4ce8a0.png
+Content Type: image/png
+
+Uri: https://seabass-cdn.dunegames.com/uploads/img/3-5f91d3.jpeg
+File Name: C:\Users\user\Desktop\dunegames.com\uploads\img\3-5f91d3.jpeg
+Content Type: image/jpeg
+
+Uri: https://seabass-cdn.dunegames.com/uploads/img/keyart4-ed644f.png
+File Name: C:\Users\user\Desktop\dunegames.com\uploads\img\keyart4-ed644f.png
+Content Type: image/png
+
+Uri: https://seabass-cdn.dunegames.com/uploads/img/keyart4-big-bc11aa.jpg
+File Name: C:\Users\user\Desktop\dunegames.com\uploads\img\keyart4-big-bc11aa.jpg
+Content Type: image/jpeg
+
+Uri: https://seabass-cdn.dunegames.com/img/env-images/env-layer3-fixed.png
+File Name: C:\Users\user\Desktop\dunegames.com\img\env-images\env-layer3-fixed.png
+Content Type: image/png
+
+Uri: https://seabass-cdn.dunegames.com/img/env-images/env-layer3-loop.png
+File Name: C:\Users\user\Desktop\dunegames.com\img\env-images\env-layer3-loop.png
+Content Type: image/png
+
+Uri: https://seabass-cdn.dunegames.com/uploads/img/keyart2-8b873c.png
+File Name: C:\Users\user\Desktop\dunegames.com\uploads\img\keyart2-8b873c.png
+Content Type: image/png
+
+Uri: https://seabass-cdn.dunegames.com/uploads/img/keyart2-big-2a3adc.jpg
+File Name: C:\Users\user\Desktop\dunegames.com\uploads\img\keyart2-big-2a3adc.jpg
+Content Type: image/jpeg
+
+Uri: https://seabass-cdn.dunegames.com/uploads/img/keyart5-63a95a.png
+File Name: C:\Users\user\Desktop\dunegames.com\uploads\img\keyart5-63a95a.png
+Content Type: image/png
+
+Uri: https://seabass-cdn.dunegames.com/uploads/img/keyart5-big-4a4cd3.jpg
+File Name: C:\Users\user\Desktop\dunegames.com\uploads\img\keyart5-big-4a4cd3.jpg
+Content Type: image/jpeg
+
+Uri: https://seabass-cdn.dunegames.com/img/env-images/env-layer4-fixed.png
+File Name: C:\Users\user\Desktop\dunegames.com\img\env-images\env-layer4-fixed.png
+Content Type: image/png
+
+Uri: https://seabass-cdn.dunegames.com/img/env-images/env-layer4-loop.png
+File Name: C:\Users\user\Desktop\dunegames.com\img\env-images\env-layer4-loop.png
+Content Type: image/png
+
+Uri: https://dunegames.com/assets/built/js/index.20220914141829.js
+File Name: C:\Users\user\Desktop\dunegames.com\assets\built\js\index.20220914141829.js
+Content Type: application/javascript
+
+Uri: https://seabass-cdn.dunegames.com/uploads/img/70prc/dune-logo-07e5ab.png
+File Name: C:\Users\user\Desktop\dunegames.com\uploads\img\70prc\dune-logo-07e5ab.png
+Content Type: image/png
+
+Uri: https://seabass-cdn.dunegames.com/uploads/img/80prc/exp-desc-shape-3d562f.png
+File Name: C:\Users\user\Desktop\dunegames.com\uploads\img\80prc\exp-desc-shape-3d562f.png
+Content Type: image/png
+
+Uri: https://seabass-cdn.dunegames.com/uploads/img/60prc/exp-desc-shape-3d562f.png
+File Name: C:\Users\user\Desktop\dunegames.com\uploads\img\60prc\exp-desc-shape-3d562f.png
+Content Type: image/png
+
+Uri: https://seabass-cdn.dunegames.com/uploads/img/40prc/exp-desc-shape-3d562f.png
+File Name: C:\Users\user\Desktop\dunegames.com\uploads\img\40prc\exp-desc-shape-3d562f.png
+Content Type: image/png
+
+Uri: https://seabass-cdn.dunegames.com/uploads/img/20prc/exp-desc-shape-3d562f.png
+File Name: C:\Users\user\Desktop\dunegames.com\uploads\img\20prc\exp-desc-shape-3d562f.png
+Content Type: image/png
+
+Uri: https://seabass-cdn.dunegames.com/uploads/img/80prc/mobile-landscape2-e323ad.jpg
+File Name: C:\Users\user\Desktop\dunegames.com\uploads\img\80prc\mobile-landscape2-e323ad.jpg
+Content Type: image/jpeg
+
+Uri: https://seabass-cdn.dunegames.com/uploads/img/60prc/mobile-landscape2-e323ad.jpg
+File Name: C:\Users\user\Desktop\dunegames.com\uploads\img\60prc\mobile-landscape2-e323ad.jpg
+Content Type: image/jpeg
+
+Uri: https://seabass-cdn.dunegames.com/uploads/img/40prc/mobile-landscape2-e323ad.jpg
+File Name: C:\Users\user\Desktop\dunegames.com\uploads\img\40prc\mobile-landscape2-e323ad.jpg
+Content Type: image/jpeg
+
+Uri: https://seabass-cdn.dunegames.com/uploads/img/20prc/mobile-landscape2-e323ad.jpg
+File Name: C:\Users\user\Desktop\dunegames.com\uploads\img\20prc\mobile-landscape2-e323ad.jpg
+Content Type: image/jpeg
+
+Uri: https://seabass-cdn.dunegames.com/uploads/img/40prc/dune-logo-with-glow-centered-e43486.png
+File Name: C:\Users\user\Desktop\dunegames.com\uploads\img\40prc\dune-logo-with-glow-centered-e43486.png
+Content Type: image/png
+
+Uri: https://seabass-cdn.dunegames.com/uploads/img/20prc/dune-logo-with-glow-centered-e43486.png
+File Name: C:\Users\user\Desktop\dunegames.com\uploads\img\20prc\dune-logo-with-glow-centered-e43486.png
+Content Type: image/png
+
+Uri: https://seabass-cdn.dunegames.com/img/env-images/env-layer1-fixed.webp
+File Name: C:\Users\user\Desktop\dunegames.com\img\env-images\env-layer1-fixed.webp
+Content Type: image/webp
+
+Uri: https://seabass-cdn.dunegames.com/img/env-images/env-layer1-loop.webp
+File Name: C:\Users\user\Desktop\dunegames.com\img\env-images\env-layer1-loop.webp
+Content Type: image/webp
+
+Uri: https://seabass-cdn.dunegames.com/img/env-images/env-layer2-fixed.webp
+File Name: C:\Users\user\Desktop\dunegames.com\img\env-images\env-layer2-fixed.webp
+Content Type: image/webp
+
+Uri: https://seabass-cdn.dunegames.com/img/env-images/env-layer2-fixed-halfres.webp
+File Name: C:\Users\user\Desktop\dunegames.com\img\env-images\env-layer2-fixed-halfres.webp
+Content Type: image/webp
+
+Uri: https://seabass-cdn.dunegames.com/img/env-images/env-layer2-loop.webp
+File Name: C:\Users\user\Desktop\dunegames.com\img\env-images\env-layer2-loop.webp
+Content Type: image/webp
+
+Uri: https://seabass-cdn.dunegames.com/img/env-images/env-layer3-fixed.webp
+File Name: C:\Users\user\Desktop\dunegames.com\img\env-images\env-layer3-fixed.webp
+Content Type: image/webp
+
+Uri: https://seabass-cdn.dunegames.com/img/env-images/env-layer3-fixed-halfres.webp
+File Name: C:\Users\user\Desktop\dunegames.com\img\env-images\env-layer3-fixed-halfres.webp
+Content Type: image/webp
+
+Uri: https://seabass-cdn.dunegames.com/img/env-images/env-layer3-loop.webp
+File Name: C:\Users\user\Desktop\dunegames.com\img\env-images\env-layer3-loop.webp
+Content Type: image/webp
+
+Uri: https://seabass-cdn.dunegames.com/img/env-images/env-layer4-fixed.webp
+File Name: C:\Users\user\Desktop\dunegames.com\img\env-images\env-layer4-fixed.webp
+Content Type: image/webp
+
+Uri: https://seabass-cdn.dunegames.com/img/env-images/env-layer4-fixed-halfres.webp
+File Name: C:\Users\user\Desktop\dunegames.com\img\env-images\env-layer4-fixed-halfres.webp
+Content Type: image/webp
+
+Uri: https://seabass-cdn.dunegames.com/img/env-images/env-layer4-loop.webp
+File Name: C:\Users\user\Desktop\dunegames.com\img\env-images\env-layer4-loop.webp
+Content Type: image/webp
+
+Uri: https://seabass-cdn.dunegames.com/img/env-images/env-bg.webp
+File Name: C:\Users\user\Desktop\dunegames.com\img\env-images\env-bg.webp
+Content Type: image/webp
+
+Uri: https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;500;600;700;900&display=swap
+File Name: C:\Users\user\Desktop\dunegames.com\css2.css
+Content Type: text/css
+
+Uri: https://dunegames.com/assets/built/fonts/96572b0c7961fc4bfad7.woff2
+File Name: C:\Users\user\Desktop\dunegames.com\assets\built\fonts\96572b0c7961fc4bfad7.woff2
+Content Type: 
+
+Uri: https://dunegames.com/assets/built/fonts/c59b62c21b313a5773ae.woff
+File Name: C:\Users\user\Desktop\dunegames.com\assets\built\fonts\c59b62c21b313a5773ae.woff
+Content Type: application/font-woff
+
+Uri: https://dunegames.com/assets/built/fonts/131c538b0d6903fc8c36.eot?33188272
+File Name: C:\Users\user\Desktop\dunegames.com\assets\built\fonts\131c538b0d6903fc8c36.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://dunegames.com/assets/built/fonts/5a5477666dd51e1df66c.woff2?33188272
+File Name: C:\Users\user\Desktop\dunegames.com\assets\built\fonts\5a5477666dd51e1df66c.woff2
+Content Type: 
+
+Uri: https://dunegames.com/assets/built/fonts/289c1d3fdb6bea9b3bbd.woff?33188272
+File Name: C:\Users\user\Desktop\dunegames.com\assets\built\fonts\289c1d3fdb6bea9b3bbd.woff
+Content Type: application/font-woff
+
+Uri: https://dunegames.com/assets/built/fonts/b20ab70dfafc4d25d711.ttf?33188272
+File Name: C:\Users\user\Desktop\dunegames.com\assets\built\fonts\b20ab70dfafc4d25d711.ttf
+Content Type: application/font-sfnt
+
+Uri: https://dunegames.com/assets/built/img/2e40720cc9af34b6bbb5.svg?33188272
+File Name: C:\Users\user\Desktop\dunegames.com\assets\built\img\2e40720cc9af34b6bbb5.svg
+Content Type: image/svg+xml
+
+Uri: https://twitter.com/DuneAwakening
+File Name: C:\Users\user\Desktop\dunegames.com\DuneAwakening.html
+Content Type: text/html
+
+Uri: https://discord.com/invite/duneawakening
+File Name: C:\Users\user\Desktop\dunegames.com\invite\duneawakening.html
+Content Type: text/html
+
