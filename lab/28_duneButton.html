@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+  <link href="style.css" rel="stylesheet">
+	<style>
+body { background: dimgray; color: wheat;}
+a, a:hover { color:white; text-decoration: none;}
+
+
+
+
+
+
+
+.poly i { color:white; font-size: 1rem;}
+
+
+
+.poly {
+
+ width:50px; height: 50px; 
+ background:rgba(3, 255, 251, 0);
+  display: flex; align-items: center; justify-content: center;
+  position:relative;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  transition:.5s;
+}
+.poly::before { background:rgba(3, 255, 251, 0.4);
+	content: ''; width:50px; height: 50px;position: absolute;
+	clip-path: polygon(50% 0, 0 50%, 50% 100%, 50% 95%, 5% 50%, 50% 5%, 95% 50%, 50% 95%, 50% 100%, 100% 50%);
+}
+.poly:hover {  background:rgba(3, 255, 251, 0.3);}
+.poly:hover::before {  background:rgba(3, 255, 251, 1);}
+
+.poly2 {
+
+width:180px; height: 50px; 
+background:rgba(3, 255, 251, 0);
+ display: flex; align-items: center; justify-content: center;
+ position:relative;
+ clip-path: polygon(12% 0, 88% 0, 100% 50%, 88% 100%, 12% 100%, 0% 50%);
+ transition:.5s;
+}
+.poly2::before { background:rgba(3, 255, 251, 0.4);
+	content: ''; width:180px; height: 50px;position: absolute;
+	clip-path: polygon( 
+	0% 50%, 12% 0, 88% 0, 100% 50%, 88% 100%, 12% 100%,
+	0% 50%, 
+	1% 50%, 12% 98%, 88% 98%, 99% 50%, 88% 2%, 12% 2%, 
+	1% 50%);
+}
+.poly2:hover {  background:rgba(3, 255, 251, 0.3);}
+.poly2:hover::before {  background:rgba(3, 255, 251, 1);}
+
+
+.svg svg{ width:80px; height: 80px; color:rgba(255,255,255,0.3);}
+.svg svg:hover { color:rgba(3, 255, 251, 1); background: red; }
+
+.svg2 img, .svg2 svg{ width:300px; height: 70px; fill:rgba(3, 255, 251, 0.3); transition: all 0.3s;}
+.svg2 img:hover, .svg2 svg:hover { fill:rgba(3, 255, 251, 1);  }
+
+
+.dbtn {position: relative; width: 200px; height: 70px; display: block; }
+.dbtn svg:first-child {position: absolute; left:0; top:0;  width:200px; height: 70px; 
+	fill:rgba(3, 255, 251, 0.1); transition: all 0.3s;}
+.dbtn svg:nth-child(2) {  width:200px; height: 70px; fill:rgba(3, 255, 251, 0.4); transition: all 0.3s;
+position: absolute; left:0; top:0;}
+.dbtn span { position: absolute; width:200px; height: 70px; display: flex; align-items: center; justify-content: center;}
+.dbtn:hover svg:first-child { fill:rgba(58, 74, 255, 0.5); }
+.dbtn:hover svg:nth-child(2) { fill:rgba(3, 255, 251, 0.8); }
+
+	</style>
+</head>
+<body>
+
+  <div class="container m-5">
+		
+		<a href="#">
+			<div class="poly">
+				<i class="bi bi-arrow-up-short"></i>
+				</div>
+		</a>
+    <a href="#">
+			<div class="poly2">
+				go to the top <i class="bi bi-arrow-up-short"></i>
+				</div>
+		</a>
+		<div class="m-5 svg">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+				<path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+			</svg>
+		</div>
+
+		<div class="m-5 svg2">
+			<img src="../img/polybg.svg" fill="currentColor" alt="">
+		</div>
+
+		<div class="m-5 svg2">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 300 70"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><polygon points="270.75 0 29.25 0 0 35 29.25 70 270.75 70 300 35 270.75 0"/></g></g></svg>
+		</div>
+
+		<div class="m-5 svg2">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 300 70"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M270.28,1,298.7,35,270.28,69H29.72L1.3,35,29.72,1H270.28m.47-1H29.25L0,35,29.25,70h241.5L300,35,270.75,0Z"/></g></g></svg>		</div>
+		</div>
+
+		<a href="#" class="dbtn m-5">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 300 70"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><polygon points="270.75 0 29.25 0 0 35 29.25 70 270.75 70 300 35 270.75 0"/></g></g></svg>
+			<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 300 70"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M270.28,1,298.7,35,270.28,69H29.72L1.3,35,29.72,1H270.28m.47-1H29.25L0,35,29.25,70h241.5L300,35,270.75,0Z"/></g></g></svg>		</div>
+			<span>Login Button</span>
+		</a>
+	</div>
+
+
+
+
+
+
+<script>
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
