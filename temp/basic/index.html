@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./style.css">
     <title>Basic Temp 1</title>
 </head>
@@ -17,24 +18,24 @@
 				<ul>
 					<li class="dep1"><a href="#">Company</a>
 						<ul class="dep2">
-							<li><a href="#">company 1</a></li>
-							<li><a href="#">company 2</a></li>
-							<li><a href="#">company 3</a></li>
+							<li style="--i:0"><a href="#">CEO</a></li>
+							<li style="--i:1"><a href="#">ViSION</a></li>
+							<li style="--i:2"><a href="#">HISTORY</a></li>
 						</ul>
 					</li>
 					<li class="dep1"><a href="#">Product</a>
 						<ul class="dep2">
-							<li><a href="#">products 1</a></li>
-							<li><a href="#">products 2</a></li>
-							<li><a href="#">products 3</a></li>
-							<li><a href="#">products 4</a></li>
-							<li><a href="#">products 5</a></li>
+							<li style="--i:0"><a href="#">PRODUCT 1</a></li>
+							<li style="--i:1"><a href="#">PRODUCT 2</a></li>
+							<li style="--i:2"><a href="#">PRODUCT 3</a></li>
 						</ul>
 					</li>
 					<li class="dep1"><a href="#">Contact</a>
 						<ul class="dep2">
-							<li><a href="#">contact 1</a></li>
-							<li><a href="#">contact 2</a></li>
+							<li style="--i:0"><a href="#">FAQ</a></li>
+							<li style="--i:1"><a href="#">CEO</a></li>
+							<li style="--i:2"><a href="#">ViSION</a></li>
+							<li style="--i:3"><a href="#">HISTORY</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -57,23 +58,14 @@
 	<section id="listarea" class="container listarea">
 		<h2>list Area</h2>
 		<h5>Lorem, ipsum dolor.</h5>
-		<div class="slider-wrap">
-			<ul>
-		
-				<li>
-					<div class="cardlist">
-						<p class="img"><img src="../../img/1.jpg"></p>
-						<div class="body">
-							<p class="title">Lorem, ipsum dolor.</p>
-							<p class="subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi quas et provident magnam quaerat voluptatem porro fuga tempora, recusandae id.</p>
-							<p class="icon"><i class="bi bi-heart-fill"></i></p>
-						</div>
-						
-					</div>
-				</li>
-			
+		<div class="slider-wrap swiper">
+			<ul class="swiper-wrapper">
 			</ul>
+			<div class="swiper-pagination"></div>
+			<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
 		</div>
+		
 	</section>
 	<section id="parallax" class="container parallax">
 		<div class="text">
@@ -110,6 +102,7 @@
 	<a class="pagetop" href="#"><i class="bi bi-chevron-up"></i></a>
 
 	<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 	<script src="style.js"></script>
 </body>
 </html>

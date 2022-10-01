@@ -67,11 +67,30 @@ header { position: relative;  padding: 0; border-bottom: 1px solid #ccc; display
 .topnav .topnav-close { display: none;}
 .topnav .topnav-list { display: none;}
 .topnav .dep1 { display: inline-block; }
-.topnav .dep1 a { padding:12px 20px; font-size: 1rem; display: block;}
-.topnav .dep2 { display: none;}
-.pagetop { position: fixed; right: 15px; bottom: 15px; border:1px solid #999; background: rgba(255,255,255,0.8);
-    display: flex; align-items: center; justify-content: center; font-size: 1rem; width:45px; height: 45px;
-    color: #333; font-weight: bold; z-index:100 ;}
+.topnav .dep1 > a { padding:12px 20px; font-size: 1rem; display: block;}
+.topnav .dep1 > a.active { color:var(--color-primary) }
+.topnav .dep1 .dep2 {display: none;background-color: #fff; width:max-content;
+  border:1px solid #d5d5d5; border-radius: 0 0 5px 5px; position: absolute;
+  box-shadow:2px 3px 5px rgba(0,0,0,0.15);}
+.topnav .dep1:hover .dep2 { display: block;}
+.topnav .dep1 .dep2.show { display: block; }
+.topnav .dep1 .dep2 li { transition: all 0.2s;
+  animation: menuMove 0.2s ease-in-out forwards;
+  animation-delay: calc(0.1s * var(--i)); list-style: none; display: block;
+  opacity: 0; transform: translateY(-10px);
+}
+@keyframes menuMove{
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0px);}
+}
+.topnav .dep1 .dep2 li a { line-height: 100%;
+  border-bottom:1px solid #d5d5d5; transition: all 0.2s;display:block;padding: 16px 20px;}
+.topnav .dep1 .dep2 li a:hover { background-color: #f5f5f5; }
+.topnav .dep1 .dep2 li:last-child a { border-bottom: none;}
+
+.pagetop { position: fixed; right: 15px; bottom: 15px; border:1px solid #ccc; background: rgba(255,255,255,0.8);
+    display: flex; align-items: center; justify-content: center; font-size: 1rem; width:35px; height: 35px;
+    color: #000; font-weight: bold; z-index:100 ;}
 
 /* ------page nav------- */
 .pagenav { position: fixed; left:50%; bottom: 30px; transform: translateX(-50%); z-index: 100;
@@ -84,8 +103,8 @@ width: max-content; background: rgba(4, 151, 230, 0.5); padding: 6px 24px; borde
 
 
 /* ------list area------- */
-section.listarea { }
-.slider-wrap ul { display: grid; grid-template-columns: 1fr 1fr 1fr ;gap:30px; }
+section.listarea {position: relative; }
+/* .slider-wrap ul { display: grid; grid-template-columns: 1fr 1fr 1fr ;gap:30px; } */
 .slider-wrap .cardlist img { width: 100%; object-fit: cover;}
 .cardlist { background-color: #fff; position: relative; border-radius: 12px; 
 box-shadow: 3px 5px 8px rgba(0,0,0,0.1); line-height: 150%;}
@@ -95,7 +114,9 @@ box-shadow: 3px 5px 8px rgba(0,0,0,0.1); line-height: 150%;}
 .cardlist .subtitle { }
 .cardlist .icon { position: absolute; top: 185px; right:20px; width:30px; height: 30px; border-radius: 50%;
     background-color: #fff; display: flex; align-items: center; justify-content: center; color: var(--color-secondary); }
-
+.swiper { padding: 0 10px 50px 10px;}
+.swiper-button-prev { position: absolute; top:calc(50% + 50px); left:-50px;}
+.swiper-button-next { position: absolute; top:calc(50% + 50px); right:-50px;}
 
 
 /* ------------parallax----------- */
@@ -106,8 +127,8 @@ padding: 0; }
 .parallax h2, .parallax h5 { color : #fff;  font-size: 2rem;}
 .parallax h2 {  font-size: 4rem;}
 .par-wrap { position: relative; width: 100%; height: 100vh; overflow: hidden;}
-.par-wrap .p1 { position: absolute; width:150%; bottom:0 ; z-index: 10; left:50%;   transform: translateX(-40%);}
-.par-wrap .p2 { position: absolute; width:150%; bottom:0 ; z-index: 5;left:50%;   transform: translateX(-40%);}
+.parallax .p1 { position: absolute; width:150%; bottom:0 ; z-index: 10; left:50%;   transform: translateX(-40%);}
+.parallax .p2 { position: absolute; width:150%; bottom:0 ; z-index: 5;left:50%;   transform: translateX(-40%);}
 
 
 /* ------------footer----------- */
@@ -123,7 +144,13 @@ border:1px solid #ccc; width: 230px; border-radius: 4px; height: 45px; }
 .sns a.naver { background-color: #2DB400 ; color:#fff }
 .sns a.naver i { font-weight: 700; font-style: normal; font-size: large;}
 .sns a.google span { width: 20px; height: 20px; margin-right:12px; display: inline-block;}
-.sns a.kakao { background-color:#fffc00  }
+.sns a.kakao { background-color:#f3e70d  }
 .sns a.facebook { background-color: #3b5998; color:#fff;}
 .sns a.twitter { background-color: #1da1f2; color:#fff;}
+
+@media screen and ( max-width: 768px){
+	.topnav .topnav-list { display: block;}
+	.topnav .topnav-close { display: none;}
+	.topnav > ul { display: none;}
+}
 
