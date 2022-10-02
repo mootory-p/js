@@ -93,16 +93,16 @@ svalue.forEach((data, i) => {
 });
 $(window).scroll(function(){
 	var yset = $(window).scrollTop();
-	if( sv2 > yset){
+	if( sv2-50 >= yset){
 		pagenav.removeClass('active');
 		pagenav.eq(0).addClass('active');
-	} else if ( sv3 > yset ){
+	} else if ( sv3-50 >= yset ){
 		pagenav.removeClass('active');
 		pagenav.eq(1).addClass('active');
-	} else if ( sv4 > yset ){
+	} else if ( sv4-50 >= yset ){
 		pagenav.removeClass('active');
 		pagenav.eq(2).addClass('active');
-	} else if ( sv4 <= yset + 100 ){
+	} else if ( sv4 <= yset + 50 ){
 		pagenav.removeClass('active');
 		pagenav.eq(3).addClass('active');
 	} 
@@ -125,5 +125,14 @@ $(window).scroll(function(){
 		
 	}
 	
-	console.log(posy, hei,yset2 );
-})
+});
+
+//mobile topmenu
+$('.topnav-list').click(function(){
+	$('.topnav > ul, .blackbg, .topnav-close').css('display','block');
+	$('.topnav-list').css('display','none');
+});
+$('.topnav-close, .blackbg').click(function(){
+	$('.topnav > ul, .topnav-close, .blackbg').css('display','none');
+	$('.topnav-list').css('display','block');
+});

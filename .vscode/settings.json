@@ -1,0 +1,9 @@
+{
+  "editor.formatOnSave": true,
+  "editor.wordWrap": "on",
+  "editor.defaultFormatter": null,
+  "scm.inputFontSize": 13,
+  "editor.fontSize": 14,
+  "editor.tabSize": 2,
+  "prettier.useTabs": true
+}

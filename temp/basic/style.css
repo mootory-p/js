@@ -64,8 +64,10 @@ header { position: relative;  padding: 0; border-bottom: 1px solid #ccc; display
     box-shadow: 0 3px 3px rgba(0,0,0,0.01); width: 100%; background-color:#fff;}
 .topnav-wrap {display: grid; grid-template-columns: 30% 60%; gap: 10%; width: 1400px;align-items: center; }
 .topnav { display: flex; justify-content: flex-end; }
-.topnav .topnav-close { display: none;}
-.topnav .topnav-list { display: none;}
+
+.topnav-close { display: none;}
+.topnav-list { display: none;}
+.blackbg { display: none;}
 .topnav .dep1 { display: inline-block; }
 .topnav .dep1 > a { padding:12px 20px; font-size: 1rem; display: block;}
 .topnav .dep1 > a.active { color:var(--color-primary) }
@@ -114,7 +116,8 @@ box-shadow: 3px 5px 8px rgba(0,0,0,0.1); line-height: 150%;}
 .cardlist .subtitle { }
 .cardlist .icon { position: absolute; top: 185px; right:20px; width:30px; height: 30px; border-radius: 50%;
     background-color: #fff; display: flex; align-items: center; justify-content: center; color: var(--color-secondary); }
-.swiper { padding: 0 10px 50px 10px;}
+.swiper { padding: 0 10px 50px 10px; position: relative; }
+.swiper-wrapper {  position:relative;}
 .swiper-button-prev { position: absolute; top:calc(50% + 50px); left:-50px;}
 .swiper-button-next { position: absolute; top:calc(50% + 50px); right:-50px;}
 
@@ -149,8 +152,18 @@ border:1px solid #ccc; width: 230px; border-radius: 4px; height: 45px; }
 .sns a.twitter { background-color: #1da1f2; color:#fff;}
 
 @media screen and ( max-width: 768px){
-	.topnav .topnav-list { display: block;}
-	.topnav .topnav-close { display: none;}
-	.topnav > ul { display: none;}
+	.topnav-list { display: block; margin-right:6px;
+  font-size: 1.4rem; cursor: pointer;}
+	.topnav-close { display: none; cursor: pointer;
+  font-size: 1.4rem; right:8px;}
+	.topnav > ul { display: none; z-index: 100; }
+  .blackbg {z-index: 99;content: ''; width:calc(100% - 230px); height:100vh; background: rgba(0,0,0,0.7);position:fixed;top:0; left:0; display: none;}
+  .topnav > ul { position: absolute;top:45px;right:0; width: 230px; height: 100vh; background-color: #fff; box-sizing: border-box; }
+  .topnav .dep1 { display: block;width:75%; margin: 0 auto;}
+  .topnav .dep1 .dep2 { display: block; position: relative; box-shadow: none; border:none; width: 100%;;
+  }
+  .topnav .dep1 .dep2 li { animation: none;opacity: 1; width: 100%;}
+  .topnav .dep1 > a { font-size: 1.2rem; padding: 12px 6px;border-bottom:1px solid #ccc;margin-bottom:16px;}
+  .topnav .dep1 .dep2 li a { font-size: 1rem; padding: 8px 6px ; border-bottom: 0;; }
 }
 
